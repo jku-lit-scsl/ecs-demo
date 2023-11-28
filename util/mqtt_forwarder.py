@@ -3,9 +3,8 @@ import logging
 
 from paho.mqtt import client as mqtt_client
 
-from util.utils import get_config, singleton, get_current_time_in_millis
-
-CONFIG = get_config()
+import config.config as CONFIG
+from util.utils import singleton, get_current_time_in_millis
 
 global local_mqtt_client_id
 
@@ -26,6 +25,7 @@ def _on_connect(client, userdata, flags, rc):
 class _MQTTForwarderLocal:
 
     def __init__(self):
+        self.client = None
         self.connect_local_mqtt()
 
     def connect_local_mqtt(self):
@@ -33,7 +33,7 @@ class _MQTTForwarderLocal:
         # Set Connecting Client ID
         client = mqtt_client.Client(local_mqtt_client_id)
         client.on_connect = _on_connect
-        client.connect(CONFIG['mqtt_ip'], CONFIG['mqtt_port'])
+        client.connect(CONFIG.mqtt_conf['mqtt_ip'], CONFIG.mqtt_conf['mqtt_port'])
         self.client = client
         logging.info('local mqtt is set up')
 
@@ -48,5 +48,6 @@ class MQTTForwarder:
         _set_globals()
         self.mqtt_local_client = _MQTTForwarderLocal()
 
-    def publish(self, topic, message):
+    def publish(self, topic: str, message):
+        """Publishes a new message on the specified topic"""
         self.mqtt_local_client.publish_local(topic, message)

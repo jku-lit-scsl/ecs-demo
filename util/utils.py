@@ -68,13 +68,3 @@ def setup():
         #     logging.StreamHandler()
         # ]
     )
-
-
-def get_config() -> dict:
-    """Returns the serialized config"""
-    pass
-    # TODO: adjust this
-    # f = open(os.path.join(PROJ_ROOT, '..', '..', '..', '..', 'config', 'config.json'), 'r')
-    # data = json.loads(f.read())
-    # f.close()
-    # return data
