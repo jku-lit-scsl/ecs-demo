@@ -3,9 +3,17 @@ import logging
 from statemachine import StateMachine, State
 from statemachine.exceptions import TransitionNotAllowed
 
+from secure_mod.monitoring_controller import MonitoringController
+
 
 class DefconHandler(StateMachine):
-    "Defcon modes handler"
+    """Defcon modes handler"""
+
+    def __init__(self):
+        # init base monitoring
+        self.monController = MonitoringController()
+        self.monController.start_monitoring()
+        super().__init__()
 
     defcon_5_normal = State(initial=True)
     defcon_4_monitoring = State()
@@ -27,26 +35,29 @@ class DefconHandler(StateMachine):
             | defcon_4_monitoring.to(defcon_5_normal)
     )
 
-    def before_cycle(self, event: str, source: State, target: State, message: str = ""):
-        message = ". " + message if message else ""
-
-        return f"Running {event} from {source.id} to {target.id}{message}"
-
     def increase(self):
         try:
             self.do_increase()
+            logging.info(f"Increased defcon mode to: {self.current_state.id}")
         except TransitionNotAllowed as e:
-            logging.warning(f'Escalate mode not possible: {str(e)}')
+            logging.warning(f'Increase defcon mode not possible: {str(e)}')
 
     def decrease(self):
         try:
             self.do_decrease()
+            logging.info(f"Decreased defcon mode to: {self.current_state.id}")
         except TransitionNotAllowed as e:
-            logging.warning(f'Decrease mode not possible: {str(e)}')
+            logging.warning(f'Decrease defcon mode not possible: {str(e)}')
+
+    def on_enter_defcon_5_normal(self):
+        self.monController.reset_frequency()
+        pass
+
 
     def on_enter_defcon_4_monitoring(self):
-        # TODO: increase monitoring of cpu
-        pass
+        new_fq = 0.5
+        logging.info(f"Set new monioting frequency to: {new_fq}")
+        self.monController.set_new_frequency(new_fq)
 
     def on_enter_defcon_3_adv_sec(self):
         # TODO: enable advanced detection model

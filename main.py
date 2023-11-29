@@ -1,3 +1,5 @@
+import time
+
 from secure_mod.defcon_handler import DefconHandler
 from util.utils import setup
 
@@ -8,7 +10,5 @@ if __name__ == '__main__':
 
     defcon_handler = DefconHandler()
 
+    time.sleep(6)
     defcon_handler.increase()
-    defcon_handler.decrease()
-
-    # defcon_handler._graph().write_png("test_state_machine_internal.png")
