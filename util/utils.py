@@ -1,17 +1,9 @@
-import sys
-import time
-from pathlib import Path
-
-# for different python versions
-if sys.version_info.major == 3 and sys.version_info.minor >= 10:
-
-    pass
-else:
-    pass
-
 import datetime
 import logging
+import time
 import uuid
+from pathlib import Path
+
 import pytz
 
 PROJ_ROOT = proj_root = Path(__file__).parent.parent

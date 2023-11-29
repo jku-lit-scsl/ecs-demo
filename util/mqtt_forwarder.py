@@ -22,23 +22,23 @@ def _on_connect(client, userdata, flags, rc):
         logging.error("Failed to connect, return code %d \n ", rc)
 
 
-class _MQTTForwarderLocal:
+class _MQTTForwarder:
 
     def __init__(self):
         self.client = None
-        self.connect_local_mqtt()
+        self.connect_forward_mqtt()
 
-    def connect_local_mqtt(self):
+    def connect_forward_mqtt(self):
         global local_mqtt_client_id
         # Set Connecting Client ID
         client = mqtt_client.Client(local_mqtt_client_id)
         client.on_connect = _on_connect
-        client.connect(CONFIG.mqtt_conf['mqtt_ip'], CONFIG.mqtt_conf['mqtt_port'])
+        client.connect(CONFIG.mqtt_conf['mqtt_ip_forward'], CONFIG.mqtt_conf['mqtt_port_forward'])
         self.client = client
         logging.info('local mqtt is set up')
 
     def publish_local(self, topic, message):
-        self.client.publish(topic, str(message))
+        self.client.publish(topic=topic, payload=str(message))
 
 
 @singleton
@@ -46,7 +46,7 @@ class MQTTForwarder:
     def __init__(self):
         logging.info('Generating new MQTT Forwarder')
         _set_globals()
-        self.mqtt_local_client = _MQTTForwarderLocal()
+        self.mqtt_local_client = _MQTTForwarder()
 
     def publish(self, topic: str, message):
         """Publishes a new message on the specified topic"""
