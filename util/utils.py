@@ -1,5 +1,4 @@
 import datetime
-import logging
 import time
 import uuid
 from pathlib import Path
@@ -46,17 +45,3 @@ def get_current_time():
     """Returns the current time"""
     tz = pytz.timezone('Europe/Vienna')
     return datetime.datetime.now(tz).__str__()
-
-
-def setup():
-    """Basic configs for the application """
-    logging.basicConfig(
-        format='%(asctime)s.%(msecs)03d %(levelname)-8s %(message)s',
-        level=logging.INFO,
-        datefmt='%Y-%m-%d\t%H:%M:%S',
-        # for logging to file
-        # handlers=[
-        #     logging.FileHandler(f"output/{get_current_time()}_output.log"),
-        #     logging.StreamHandler()
-        # ]
-    )

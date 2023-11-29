@@ -33,7 +33,7 @@ class _MQTTReceiver:
         # Set Connecting Client ID
         client = mqtt_client.Client(receive_mqtt_client_id)
         client.on_connect = _on_connect
-        client.connect(CONFIG.mqtt_conf['mqtt_ip_receive'], CONFIG.mqtt_conf['mqtt_port_receive'])
+        client.connect(CONFIG.network_conf['server_ip'], 1883)
         client.on_message = self.on_message
         self.client = client
         logging.info('receiver mqtt is set up')

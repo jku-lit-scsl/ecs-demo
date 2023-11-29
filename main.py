@@ -1,22 +1,4 @@
-import threading
-import time
-
-from util.mqtt_forwarder import MQTTForwarder
-from util.mqtt_receiver import MQTTReceiver
-from util.utils import setup
-
-
-def _setup_mqtt_forwarder():
-    mqtt_fw = MQTTForwarder()
-    time.sleep(5)
-    mqtt_fw.publish('tester', 'msgpayload')
-
-
-def _setup_mqtt_receiver():
-    mqtt_receiver = MQTTReceiver()
-    mqtt_receiver.subscribe('#')
-    mqtt_receiver.start_listening()
-
+from util.setup import setup
 
 if __name__ == '__main__':
     setup()
@@ -29,8 +11,3 @@ if __name__ == '__main__':
     # defcon_handler.increase()
 
     # print(config.config.network_conf['my_ip'])
-
-    forwarder_thread = threading.Thread(target=_setup_mqtt_forwarder)
-    receiver_thread = threading.Thread(target=_setup_mqtt_receiver)
-    forwarder_thread.start()
-    receiver_thread.start()
