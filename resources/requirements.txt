@@ -1,0 +1,6 @@
+paho-mqtt
+pytz
+python-statemachine
+pydot
+psutil
+websockets
