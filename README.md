@@ -4,8 +4,9 @@
 
 ### Python packages
 
-`pip install -r requirements.txt`
+`pip install -r resources/requirements.txt`
 
+These packages will be installed:
 ```bash
 paho-mqtt
 pytz

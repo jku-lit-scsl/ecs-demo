@@ -10,4 +10,3 @@ if __name__ == '__main__':
     # time.sleep(6)
     # defcon_handler.increase()
 
-    # print(config.config.network_conf['my_ip'])

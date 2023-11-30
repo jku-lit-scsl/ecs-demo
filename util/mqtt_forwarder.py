@@ -33,7 +33,7 @@ class _MQTTForwarder:
         # Set Connecting Client ID
         client = mqtt_client.Client(local_mqtt_client_id)
         client.on_connect = _on_connect
-        client.connect(CONFIG.network_conf['my_ip'], 1883)
+        client.connect(CONFIG.network_conf['server_ip'], 1883)
         self.client = client
         logging.info('local mqtt is set up')
 

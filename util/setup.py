@@ -57,11 +57,11 @@ def setup():
     global OPERATING_MODE
 
     # determine operating mode
-    if CONFIG.network_conf['server_ip'] and len(CONFIG.network_conf['children_ips']) > 0:
+    if CONFIG.network_conf['server_ip'] and len(CONFIG.network_conf['client_ips']) > 0:
         OPERATING_MODE = EDGE_DEVICE
-    elif CONFIG.network_conf['server_ip'] and len(CONFIG.network_conf['children_ips']) == 0:
+    elif CONFIG.network_conf['server_ip'] and len(CONFIG.network_conf['client_ips']) == 0:
         OPERATING_MODE = HARDWARE_DEVICE
-    elif CONFIG.network_conf['server_ip'] == '' and len(CONFIG.network_conf['children_ips']) > 0:
+    elif CONFIG.network_conf['server_ip'] == '' and len(CONFIG.network_conf['client_ips']) > 0:
         OPERATING_MODE = CLOUD_SERVER
 
     logging.info(f'Set operating mode to {get_operating_string()}')
@@ -74,6 +74,10 @@ def setup():
         _setup_client()
     elif OPERATING_MODE == HARDWARE_DEVICE:
         _setup_client()
+
+    logging.info(f"my_ip = {CONFIG.network_conf['my_ip']}")
+    logging.info(f"server_ip = {CONFIG.network_conf['server_ip']}")
+    logging.info(f"client_ips = {CONFIG.network_conf['client_ips']}")
 
 
 def is_operating_mode_valid() -> bool:
