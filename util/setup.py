@@ -1,10 +1,10 @@
 import logging
 import threading
-import time
 
 import config.config as CONFIG
 from util.mqtt_forwarder import MQTTForwarder
 from util.mqtt_receiver import MQTTReceiver
+from util.sensors.AdafruitDHT import collect_dht22_data
 from util.web_socket_server import start_ws_server
 
 CLOUD_SERVER = 0
@@ -16,8 +16,8 @@ OPERATING_MODE = None
 
 def _setup_mqtt_forwarder():
     mqtt_fw = MQTTForwarder()
-    time.sleep(5)  # todo: remove this, only for testing purposes
-    mqtt_fw.publish('tester', 'msgpayload')
+    if CONFIG.network_conf['my_ip'] == '192.168.68.61':
+        collect_dht22_data(mqtt_fw)
 
 
 def _setup_mqtt_receiver():
