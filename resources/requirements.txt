@@ -2,5 +2,7 @@ paho-mqtt
 pytz
 python-statemachine
 pydot
+setuptools
+wheel
 psutil
 websockets
