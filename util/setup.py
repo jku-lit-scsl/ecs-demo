@@ -79,10 +79,17 @@ def setup():
 
 
 def is_operating_mode_valid() -> bool:
+    global OPERATING_MODE
     return OPERATING_MODE == CLOUD_SERVER or OPERATING_MODE == EDGE_DEVICE or OPERATING_MODE == FOG_DEVICE
 
 
+def get_operating_mode():
+    global OPERATING_MODE
+    return OPERATING_MODE
+
+
 def get_operating_string() -> str:
+    global OPERATING_MODE
     if OPERATING_MODE == CLOUD_SERVER: return 'Cloud Server'
     if OPERATING_MODE == EDGE_DEVICE: return 'Edge Device'
     if OPERATING_MODE == FOG_DEVICE: return 'Fog Device'

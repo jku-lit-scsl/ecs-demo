@@ -4,7 +4,7 @@ import time
 import psutil
 
 from util.mqtt_forwarder import MQTTForwarder
-from util.setup import OPERATING_MODE, CLOUD_SERVER
+from util.setup import CLOUD_SERVER, get_operating_mode
 
 
 def get_cpu_usage() -> float:
@@ -38,7 +38,7 @@ class MonitoringController():
     def _monitor(self):
         while not self.stop_thread_flag:
             cpu_usage_str = f'CPU-Usage={get_cpu_usage()} RAM-Usage={get_virtual_memory()}'
-            if OPERATING_MODE != CLOUD_SERVER:
+            if get_operating_mode() != CLOUD_SERVER:
                 mqtt_fw = MQTTForwarder()
                 mqtt_fw.publish('sensor/cpu', cpu_usage_str)
             # TODO: forward the message somehow to the knowledge base when in other defcon mode
