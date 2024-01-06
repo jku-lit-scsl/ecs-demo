@@ -44,6 +44,7 @@ class _MQTTForwarder:
             'data': message,
             'timestamp_sent': get_current_time_in_millis()
         }
+        logging.info(f'MQTT publish: topic->{topic} | msg->{message}')
         self.client.publish(topic=topic, payload=json.dumps(message))
 
 
@@ -55,6 +56,5 @@ class MQTTForwarder:
         self.mqtt_local_client = _MQTTForwarder()
 
     def publish(self, topic: str, message):
-        logging.info(f'MQTT publish: topic->{topic} | msg->{message}')
         """Publishes a new message on the specified topic"""
         self.mqtt_local_client.publish_local(topic, message)
