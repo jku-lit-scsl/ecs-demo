@@ -14,8 +14,7 @@ EDGE_DEVICE = 2
 OPERATING_MODE = None
 
 
-def _setup_mqtt_forwarder():
-    mqtt_fw = MQTTForwarder()
+def _setup_mqtt_forwarder(mqtt_fw: MQTTForwarder):
     if CONFIG.network_conf['my_ip'] == '192.168.68.61':
         collect_dht22_data(mqtt_fw)
 
@@ -36,12 +35,12 @@ def _setup_server():
     # TODO: setup websocket server
 
 
-def _setup_client():
-    threading.Thread(target=_setup_mqtt_forwarder).start()
+def _setup_client(mqtt_fw: MQTTForwarder):
+    threading.Thread(target=_setup_mqtt_forwarder, args=(mqtt_fw,)).start()
     # TODO: setup websocket client
 
 
-def setup():
+def setup(mqtt_fw: MQTTForwarder):
     """Basic configs for the application """
     logging.basicConfig(
         format='%(asctime)s.%(msecs)03d %(levelname)-8s %(message)s',
@@ -71,9 +70,9 @@ def setup():
         _setup_server()
     elif OPERATING_MODE == FOG_DEVICE:
         _setup_server()
-        _setup_client()
+        _setup_client(mqtt_fw)
     elif OPERATING_MODE == EDGE_DEVICE:
-        _setup_client()
+        _setup_client(mqtt_fw)
 
     logging.info(f"my_ip = {CONFIG.network_conf['my_ip']}")
     logging.info(f"server_ip = {CONFIG.network_conf['server_ip']}")
