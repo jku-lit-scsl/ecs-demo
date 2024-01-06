@@ -44,7 +44,6 @@ def setup(mqtt_fw: MQTTForwarder):
     """Basic configs for the application """
     logging.basicConfig(
         format='%(asctime)s.%(msecs)03d %(levelname)-8s %(message)s',
-        level=logging.INFO,
         datefmt='%Y-%m-%d\t%H:%M:%S',
         # for logging to file
         # handlers=[
@@ -52,6 +51,8 @@ def setup(mqtt_fw: MQTTForwarder):
         #     logging.StreamHandler()
         # ]
     )
+    # set log level to info
+    logging.getLogger().setLevel(logging.INFO)
 
     global OPERATING_MODE
 
