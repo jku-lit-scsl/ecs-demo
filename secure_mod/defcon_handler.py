@@ -4,15 +4,14 @@ from statemachine import StateMachine, State
 from statemachine.exceptions import TransitionNotAllowed
 
 from secure_mod.monitoring_controller import MonitoringController
-from util.mqtt_forwarder import MQTTForwarder
 
 
 class DefconHandler(StateMachine):
     """Defcon modes handler"""
 
-    def __init__(self, mqtt_fw: MQTTForwarder):
+    def __init__(self):
         # init base monitoring
-        self.monController = MonitoringController(mqtt_fw)
+        self.monController = MonitoringController()
         self.monController.start_monitoring()
         super().__init__()
 

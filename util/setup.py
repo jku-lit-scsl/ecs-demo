@@ -3,7 +3,6 @@ import threading
 
 import config.config as CONFIG
 from Adafruit_Python_DHT.examples.AdafruitDHT import collect_dht22_data
-from util.mqtt_forwarder import MQTTForwarder
 from util.mqtt_receiver import MQTTReceiver
 from util.web_socket_server import start_ws_server
 
@@ -14,9 +13,9 @@ EDGE_DEVICE = 2
 OPERATING_MODE = None
 
 
-def _setup_mqtt_forwarder(mqtt_fw: MQTTForwarder):
+def _setup_mqtt_forwarder():
     if CONFIG.network_conf['my_ip'] == '192.168.68.61':
-        collect_dht22_data(mqtt_fw)
+        collect_dht22_data()
 
 
 def _setup_mqtt_receiver():
@@ -35,12 +34,12 @@ def _setup_server():
     # TODO: setup websocket server
 
 
-def _setup_client(mqtt_fw: MQTTForwarder):
-    threading.Thread(target=_setup_mqtt_forwarder, args=(mqtt_fw,)).start()
+def _setup_client():
+    threading.Thread(target=_setup_mqtt_forwarder).start()
     # TODO: setup websocket client
 
 
-def setup(mqtt_fw: MQTTForwarder):
+def setup():
     """Basic configs for the application """
     logging.basicConfig(
         format='%(asctime)s.%(msecs)03d %(levelname)-8s %(message)s',
@@ -74,9 +73,9 @@ def setup(mqtt_fw: MQTTForwarder):
         _setup_server()
     elif OPERATING_MODE == FOG_DEVICE:
         _setup_server()
-        _setup_client(mqtt_fw)
+        _setup_client()
     elif OPERATING_MODE == EDGE_DEVICE:
-        _setup_client(mqtt_fw)
+        _setup_client()
 
 
 def is_operating_mode_valid() -> bool:

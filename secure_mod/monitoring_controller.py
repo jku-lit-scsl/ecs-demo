@@ -4,6 +4,7 @@ import time
 import psutil
 
 from util.mqtt_forwarder import MQTTForwarder
+from util.setup import OPERATING_MODE, CLOUD_SERVER
 
 
 def get_cpu_usage() -> float:
@@ -22,10 +23,9 @@ class MonitoringController():
     # the default frequency for measuring the cpu in seconds
     BASE_FREQUENCY = 1.0
 
-    def __init__(self, mqtt_fw: MQTTForwarder):
+    def __init__(self):
         self.current_frequency = self.BASE_FREQUENCY
         self.stop_thread_flag = False
-        self.mqtt_fw = mqtt_fw
 
     def set_new_frequency(self, new_frequency):
         """Sets a new monitoring frequency"""
@@ -37,8 +37,11 @@ class MonitoringController():
 
     def _monitor(self):
         while not self.stop_thread_flag:
+            cpu_usage_str = f'CPU-Usage={get_cpu_usage()} RAM-Usage={get_virtual_memory()}'
+            if OPERATING_MODE != CLOUD_SERVER:
+                mqtt_fw = MQTTForwarder()
+                mqtt_fw.publish('sensor/cpu', cpu_usage_str)
             # TODO: forward the message somehow to the knowledge base when in other defcon mode
-            self.mqtt_fw.publish('sensor/cpu', f'CPU-Usage={get_cpu_usage()} RAM-Usage={get_virtual_memory()}')
             time.sleep(self.current_frequency)
 
     def start_monitoring(self):
