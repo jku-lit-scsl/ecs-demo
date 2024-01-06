@@ -2,7 +2,7 @@
 
 # Set up Git credential caching
 git config --global credential.helper cache
-git config --global credential.helper 'cache --timeout=3600'
+git config --global credential.helper 'cache --timeout=43200'
 
 # Install Python 3.11 and its development tools
 sudo apt-get install build-essential python3.11 python3.11-venv python3.11-dev
