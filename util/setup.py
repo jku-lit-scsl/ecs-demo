@@ -9,7 +9,7 @@ from util.web_socket_server import start_ws_server
 
 CLOUD_SERVER = 0
 EDGE_DEVICE = 1
-HARDWARE_DEVICE = 2
+FOG_DEVICE = 2
 
 OPERATING_MODE = None
 
@@ -60,7 +60,7 @@ def setup():
     if CONFIG.network_conf['server_ip'] and len(CONFIG.network_conf['client_ips']) > 0:
         OPERATING_MODE = EDGE_DEVICE
     elif CONFIG.network_conf['server_ip'] and len(CONFIG.network_conf['client_ips']) == 0:
-        OPERATING_MODE = HARDWARE_DEVICE
+        OPERATING_MODE = FOG_DEVICE
     elif CONFIG.network_conf['server_ip'] == '' and len(CONFIG.network_conf['client_ips']) > 0:
         OPERATING_MODE = CLOUD_SERVER
 
@@ -72,7 +72,7 @@ def setup():
     elif OPERATING_MODE == EDGE_DEVICE:
         _setup_server()
         _setup_client()
-    elif OPERATING_MODE == HARDWARE_DEVICE:
+    elif OPERATING_MODE == FOG_DEVICE:
         _setup_client()
 
     logging.info(f"my_ip = {CONFIG.network_conf['my_ip']}")
@@ -81,12 +81,12 @@ def setup():
 
 
 def is_operating_mode_valid() -> bool:
-    return OPERATING_MODE == CLOUD_SERVER or OPERATING_MODE == EDGE_DEVICE or OPERATING_MODE == HARDWARE_DEVICE
+    return OPERATING_MODE == CLOUD_SERVER or OPERATING_MODE == EDGE_DEVICE or OPERATING_MODE == FOG_DEVICE
 
 
 def get_operating_string() -> str:
     if OPERATING_MODE == CLOUD_SERVER: return 'Cloud Server'
     if OPERATING_MODE == EDGE_DEVICE: return 'Edge Device'
-    if OPERATING_MODE == HARDWARE_DEVICE: return 'Hardware Device'
+    if OPERATING_MODE == FOG_DEVICE: return 'Hardware Device'
     logging.warning('No operating mode set!')
     return 'Unknown Mode'

@@ -60,13 +60,13 @@ class DefconHandler(StateMachine):
         self.monController.set_new_frequency(new_fq)
 
     def on_enter_defcon_3_adv_sec(self):
-        # TODO: enable advanced detection model
+        # TODO: count mqtt messages
         pass
 
     def on_enter_defcon_2_restrict(self):
-        # TODO: only allow priority messages
+        # TODO: disable mqtt
         pass
 
     def on_enter_defcon_1_localize(self):
-        # TODO: localize entirely
+        # TODO: shutdown device
         pass
