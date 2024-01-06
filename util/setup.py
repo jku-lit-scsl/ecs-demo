@@ -64,6 +64,9 @@ def setup(mqtt_fw: MQTTForwarder):
         OPERATING_MODE = CLOUD_SERVER
 
     logging.info(f'Set operating mode to {get_operating_string()}')
+    logging.info(f"my_ip = {CONFIG.network_conf['my_ip']}")
+    logging.info(f"server_ip = {CONFIG.network_conf['server_ip']}")
+    logging.info(f"client_ips = {CONFIG.network_conf['client_ips']}")
 
     # setup communication depending on operating mode
     if OPERATING_MODE == CLOUD_SERVER:
@@ -73,10 +76,6 @@ def setup(mqtt_fw: MQTTForwarder):
         _setup_client(mqtt_fw)
     elif OPERATING_MODE == EDGE_DEVICE:
         _setup_client(mqtt_fw)
-
-    logging.info(f"my_ip = {CONFIG.network_conf['my_ip']}")
-    logging.info(f"server_ip = {CONFIG.network_conf['server_ip']}")
-    logging.info(f"client_ips = {CONFIG.network_conf['client_ips']}")
 
 
 def is_operating_mode_valid() -> bool:

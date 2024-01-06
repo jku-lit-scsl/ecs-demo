@@ -21,7 +21,7 @@ async def handle_msg_receive(websocket, path):
 async def _main_ws_starter():
     server = await websockets.serve(handle_msg_receive, host, 8765)
 
-    print(f"WebSocket server started on ws://{host}:8765")
+    logging.info(f"WebSocket server started on ws://{host}:8765")
 
     await server.wait_closed()
 
