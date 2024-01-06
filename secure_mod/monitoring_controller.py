@@ -37,7 +37,10 @@ class MonitoringController():
 
     def _monitor(self):
         while not self.stop_thread_flag:
-            cpu_usage_str = f'CPU-Usage={get_cpu_usage()} RAM-Usage={get_virtual_memory()}'
+            cpu_usage_str = {
+                'CPU-Usage': get_cpu_usage(),
+                'RAM-Usage': get_virtual_memory()
+            }
             if get_operating_mode() != CLOUD_SERVER:
                 mqtt_fw = MQTTForwarder()
                 mqtt_fw.publish('sensor/cpu', cpu_usage_str)

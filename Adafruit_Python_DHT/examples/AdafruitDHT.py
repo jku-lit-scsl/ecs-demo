@@ -20,5 +20,9 @@ def collect_dht22_data():
 
     while True:
         humidity, temperature = Adafruit_DHT.read_retry(Adafruit_DHT.DHT22, 4)
-        mqtt_fw.publish('sensor/dht22', f'Temp={temperature}  Humidity={humidity}%')
+        msg = {
+            'humidity': humidity,
+            'temperature': temperature,
+        }
+        mqtt_fw.publish('sensor/dht22', msg)
         time.sleep(1)
