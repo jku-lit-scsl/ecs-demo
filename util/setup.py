@@ -2,9 +2,9 @@ import logging
 import threading
 
 import config.config as CONFIG
+from Adafruit_Python_DHT.examples.AdafruitDHT import collect_dht22_data
 from util.mqtt_forwarder import MQTTForwarder
 from util.mqtt_receiver import MQTTReceiver
-from util.sensors.AdafruitDHT import collect_dht22_data
 from util.web_socket_server import start_ws_server
 
 CLOUD_SERVER = 0
