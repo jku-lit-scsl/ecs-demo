@@ -1,7 +1,16 @@
 #!/usr/bin/python
+import logging
 import time
 
-import Adafruit_DHT
+try:
+    import Adafruit_DHT
+except ModuleNotFoundError as e:
+    # Handle the case where Adafruit_DHT is not found
+    if str(e) == "No module named 'Adafruit_DHT'":
+        logging.info("Adafruit_DHT module not found. Continuing without it.")
+    else:
+        # If the exception is for a different module, re-raise it
+        raise
 
 from util.mqtt_forwarder import MQTTForwarder
 
