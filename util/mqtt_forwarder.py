@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import json
 import logging
 
 from paho.mqtt import client as mqtt_client
@@ -38,7 +39,12 @@ class _MQTTForwarder:
         logging.info('local mqtt is set up')
 
     def publish_local(self, topic, message):
-        self.client.publish(topic=topic, payload=str(message))
+        topic = f"{CONFIG.network_conf['my_ip']}/{topic}"
+        message = {
+            'data': message,
+            'timestamp_sent': get_current_time_in_millis()
+        }
+        self.client.publish(topic=topic, payload=json.load(message))
 
 
 @singleton
