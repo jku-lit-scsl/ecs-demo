@@ -8,8 +8,8 @@ from util.sensors.AdafruitDHT import collect_dht22_data
 from util.web_socket_server import start_ws_server
 
 CLOUD_SERVER = 0
-EDGE_DEVICE = 1
-FOG_DEVICE = 2
+FOG_DEVICE = 1
+EDGE_DEVICE = 2
 
 OPERATING_MODE = None
 
@@ -58,9 +58,9 @@ def setup():
 
     # determine operating mode
     if CONFIG.network_conf['server_ip'] and len(CONFIG.network_conf['client_ips']) > 0:
-        OPERATING_MODE = EDGE_DEVICE
-    elif CONFIG.network_conf['server_ip'] and len(CONFIG.network_conf['client_ips']) == 0:
         OPERATING_MODE = FOG_DEVICE
+    elif CONFIG.network_conf['server_ip'] and len(CONFIG.network_conf['client_ips']) == 0:
+        OPERATING_MODE = EDGE_DEVICE
     elif CONFIG.network_conf['server_ip'] == '' and len(CONFIG.network_conf['client_ips']) > 0:
         OPERATING_MODE = CLOUD_SERVER
 
@@ -69,10 +69,10 @@ def setup():
     # setup communication depending on operating mode
     if OPERATING_MODE == CLOUD_SERVER:
         _setup_server()
-    elif OPERATING_MODE == EDGE_DEVICE:
+    elif OPERATING_MODE == FOG_DEVICE:
         _setup_server()
         _setup_client()
-    elif OPERATING_MODE == FOG_DEVICE:
+    elif OPERATING_MODE == EDGE_DEVICE:
         _setup_client()
 
     logging.info(f"my_ip = {CONFIG.network_conf['my_ip']}")
@@ -87,6 +87,6 @@ def is_operating_mode_valid() -> bool:
 def get_operating_string() -> str:
     if OPERATING_MODE == CLOUD_SERVER: return 'Cloud Server'
     if OPERATING_MODE == EDGE_DEVICE: return 'Edge Device'
-    if OPERATING_MODE == FOG_DEVICE: return 'Hardware Device'
+    if OPERATING_MODE == FOG_DEVICE: return 'Fog Device'
     logging.warning('No operating mode set!')
     return 'Unknown Mode'
