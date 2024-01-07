@@ -48,6 +48,7 @@ class DefconHandler(StateMachine):
         try:
             self.do_decrease()
             logging.info(f"Decreased defcon mode to: {self.current_state.id}")
+            update_knowledge_base(self.current_state.id)
         except TransitionNotAllowed as e:
             logging.warning(f'Decrease defcon mode not possible: {str(e)}')
 

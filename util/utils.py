@@ -7,6 +7,7 @@ from pathlib import Path
 
 import pytz
 
+from config.config import network_conf
 from util.web_socket_client import send_msg_websocket
 
 PROJ_ROOT = proj_root = Path(__file__).parent.parent
@@ -19,7 +20,10 @@ def update_knowledge_base(defcon_lvl):
     :return: void
     """
     # TODO: save in local knowledgebase
-    msg = {'defcon_lvl': defcon_lvl}
+    msg = {
+        'defcon_lvl': defcon_lvl,
+        'client_ip': network_conf['my_ip']
+    }
     threading.Thread(target=send_msg_websocket, args=(json.dumps(msg),)).start()
 
 
