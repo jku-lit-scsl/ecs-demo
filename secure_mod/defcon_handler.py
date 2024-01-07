@@ -4,6 +4,7 @@ from statemachine import StateMachine, State
 from statemachine.exceptions import TransitionNotAllowed
 
 from secure_mod.monitoring_controller import MonitoringController
+from util.utils import update_knowledge_base
 
 
 class DefconHandler(StateMachine):
@@ -39,7 +40,7 @@ class DefconHandler(StateMachine):
         try:
             self.do_increase()
             logging.info(f"Increased defcon mode to: {self.current_state.id}")
-            send_to_knowledgebase(self.current_state.id)
+            update_knowledge_base(self.current_state.id)
         except TransitionNotAllowed as e:
             logging.warning(f'Increase defcon mode not possible: {str(e)}')
 
