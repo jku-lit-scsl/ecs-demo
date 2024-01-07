@@ -5,7 +5,6 @@ import logging
 import websockets
 
 import config.config as CONFIG
-from util.setup import get_operating_mode, CLOUD_SERVER
 from util.utils import send_update_knowledge_base
 
 host = CONFIG.network_conf['my_ip']
@@ -18,8 +17,7 @@ async def handle_msg_receive(websocket, path):
             message_obj = json.loads(message)
             if message_obj['defcon_lvl']:
                 logging.info(f"Client >{message_obj['ip']}<switched defcon level to {message_obj['defcon_lvl']}")
-                if get_operating_mode() != CLOUD_SERVER:
-                    send_update_knowledge_base(message_obj['defcon_lvl'], message_obj['ip'])
+                send_update_knowledge_base(message_obj['defcon_lvl'], message_obj['ip'])
             # todo: change behavior?
             # todo: forward to next parent
             await websocket.send(f"Server received: {message}")
