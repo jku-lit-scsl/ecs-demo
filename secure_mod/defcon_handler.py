@@ -13,6 +13,7 @@ class DefconHandler(StateMachine):
         # init base monitoring
         self.monController = MonitoringController()
         self.monController.start_monitoring()
+        logging.info(f'Started Defcon Handler - Current Level {self.current_state.id}')
         super().__init__()
 
     defcon_5_normal = State(initial=True)
@@ -53,10 +54,9 @@ class DefconHandler(StateMachine):
         self.monController.reset_frequency()
         pass
 
-
     def on_enter_defcon_4_monitoring(self):
         new_fq = 0.5
-        logging.info(f"Set new monioting frequency to: {new_fq}")
+        logging.info(f"Set new monitoring frequency to: {new_fq}")
         self.monController.set_new_frequency(new_fq)
 
     def on_enter_defcon_3_adv_sec(self):

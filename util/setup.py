@@ -4,6 +4,7 @@ import threading
 import config.config as CONFIG
 from Adafruit_Python_DHT.examples.AdafruitDHT import collect_dht22_data
 from util.mqtt_receiver import MQTTReceiver
+from util.web_socket_client import start_ws_client
 from util.web_socket_server import start_ws_server
 
 CLOUD_SERVER = 0
@@ -24,18 +25,15 @@ def _setup_mqtt_receiver():
     mqtt_receiver.start_listening()
 
 
-def _setup_web_socket_server():
-    start_ws_server()
-
-
 def _setup_server():
     threading.Thread(target=_setup_mqtt_receiver).start()
-    threading.Thread(target=_setup_web_socket_server).start()
+    threading.Thread(target=start_ws_server).start()
     # TODO: setup websocket server
 
 
 def _setup_client():
     threading.Thread(target=_setup_mqtt_forwarder).start()
+    threading.Thread(target=start_ws_client).start()
     # TODO: setup websocket client
 
 
@@ -43,7 +41,7 @@ def setup():
     """Basic configs for the application """
     logging.basicConfig(
         format='%(asctime)s.%(msecs)03d %(levelname)-8s %(message)s',
-        datefmt='%Y-%m-%d\t%H:%M:%S',
+        datefmt='%Y-%m-%d\t%H:%M:%S'
         # for logging to file
         # handlers=[
         #     logging.FileHandler(f"output/{get_current_time()}_output.log"),
