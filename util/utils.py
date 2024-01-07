@@ -7,6 +7,7 @@ from pathlib import Path
 
 import pytz
 
+from util.setup import get_operating_mode, CLOUD_SERVER
 from util.web_socket_client import send_msg_websocket
 
 PROJ_ROOT = proj_root = Path(__file__).parent.parent
@@ -19,11 +20,12 @@ def send_update_knowledge_base(defcon_lvl, ip):
     :return: void
     """
     # TODO: save in local knowledgebase
-    msg = {
-        'defcon_lvl': defcon_lvl,
-        'ip': ip
-    }
-    threading.Thread(target=send_msg_websocket, args=(json.dumps(msg),)).start()
+    if get_operating_mode() != CLOUD_SERVER:
+        msg = {
+            'defcon_lvl': defcon_lvl,
+            'ip': ip
+        }
+        threading.Thread(target=send_msg_websocket, args=(json.dumps(msg),)).start()
 
 
 def get_current_time_in_millis():
