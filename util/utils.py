@@ -1,11 +1,26 @@
 import datetime
+import json
+import threading
 import time
 import uuid
 from pathlib import Path
 
 import pytz
 
+from util.web_socket_client import send_msg_websocket
+
 PROJ_ROOT = proj_root = Path(__file__).parent.parent
+
+
+def update_knowledge_base(defcon_lvl):
+    """
+    Takes the defcon level as param and saves it locally and, if possible, sends it to the parent system
+    :param defcon_lvl: the new defcon level to be stored
+    :return: void
+    """
+    # TODO: save in local knowledgebase
+    msg = {'defcon_lvl': defcon_lvl}
+    threading.Thread(target=send_msg_websocket, args=(json.dumps(msg),)).start()
 
 
 def get_current_time_in_millis():
