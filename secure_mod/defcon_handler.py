@@ -3,6 +3,7 @@ import logging
 from statemachine import StateMachine, State
 from statemachine.exceptions import TransitionNotAllowed
 
+from config.config import network_conf
 from secure_mod.monitoring_controller import MonitoringController
 from util.utils import update_knowledge_base
 
@@ -40,7 +41,7 @@ class DefconHandler(StateMachine):
         try:
             self.do_increase()
             logging.info(f"Increased defcon mode to: {self.current_state.id}")
-            update_knowledge_base(self.current_state.id)
+            update_knowledge_base(self.current_state.id, network_conf['my_ip'])
         except TransitionNotAllowed as e:
             logging.warning(f'Increase defcon mode not possible: {str(e)}')
 
@@ -48,7 +49,7 @@ class DefconHandler(StateMachine):
         try:
             self.do_decrease()
             logging.info(f"Decreased defcon mode to: {self.current_state.id}")
-            update_knowledge_base(self.current_state.id)
+            update_knowledge_base(self.current_state.id, network_conf['my_ip'])
         except TransitionNotAllowed as e:
             logging.warning(f'Decrease defcon mode not possible: {str(e)}')
 

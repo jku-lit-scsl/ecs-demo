@@ -7,24 +7,25 @@ from pathlib import Path
 
 import pytz
 
-from config.config import network_conf
+from util.setup import get_operating_mode, CLOUD_SERVER
 from util.web_socket_client import send_msg_websocket
 
 PROJ_ROOT = proj_root = Path(__file__).parent.parent
 
 
-def update_knowledge_base(defcon_lvl):
+def update_knowledge_base(defcon_lvl, ip):
     """
     Takes the defcon level as param and saves it locally and, if possible, sends it to the parent system
     :param defcon_lvl: the new defcon level to be stored
     :return: void
     """
     # TODO: save in local knowledgebase
-    msg = {
-        'defcon_lvl': defcon_lvl,
-        'client_ip': network_conf['my_ip']
-    }
-    threading.Thread(target=send_msg_websocket, args=(json.dumps(msg),)).start()
+    if get_operating_mode() != CLOUD_SERVER:
+        msg = {
+            'defcon_lvl': defcon_lvl,
+            'ip': ip
+        }
+        threading.Thread(target=send_msg_websocket, args=(json.dumps(msg),)).start()
 
 
 def get_current_time_in_millis():
