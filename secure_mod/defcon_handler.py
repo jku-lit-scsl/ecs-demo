@@ -13,7 +13,6 @@ class DefconHandler(StateMachine):
         # init base monitoring
         self.monController = MonitoringController()
         self.monController.start_monitoring()
-        logging.info(f'Started Defcon Handler - Current Level {self.current_state.id}')
         super().__init__()
 
     defcon_5_normal = State(initial=True)
