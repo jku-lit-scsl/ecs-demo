@@ -44,7 +44,7 @@ class _MQTTForwarder:
             'data': message,
             'timestamp_sent': get_current_time_in_millis()
         }
-        logging.info(f'MQTT publish: topic->{topic} | msg->{message}')
+        # logging.info(f'MQTT publish: topic->{topic} | msg->{message}')
         self.client.publish(topic=topic, payload=json.dumps(message))
 
 

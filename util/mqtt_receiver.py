@@ -42,7 +42,8 @@ class _MQTTReceiver:
         self.client.subscribe(topic)
 
     def on_message(self, client, userdata, msg):
-        logging.info('received mqtt message: ' + msg.topic + " -> " + msg.payload.decode())
+        pass
+        # logging.info('received mqtt message: ' + msg.topic + " -> " + msg.payload.decode())
 
     def loop(self):
         self.client.loop_forever()
