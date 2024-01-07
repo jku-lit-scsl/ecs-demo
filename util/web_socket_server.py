@@ -19,12 +19,10 @@ async def handle_msg_receive(websocket, path):
 
 
 async def _main_ws_starter():
-    server = await websockets.serve(handle_msg_receive, host, 8765)
-
-    logging.info(f"WebSocket server started on ws://{host}:8765")
-
-    await server.wait_closed()
+    start_server = websockets.serve(handle_msg_receive, host, 8765)
+    asyncio.get_event_loop().run_until_complete(start_server)
+    asyncio.get_event_loop().run_forever()
 
 
 def start_ws_server():
-    asyncio.run(_main_ws_starter())
+    _main_ws_starter()

@@ -4,7 +4,6 @@ import threading
 import config.config as CONFIG
 from Adafruit_Python_DHT.examples.AdafruitDHT import collect_dht22_data
 from util.mqtt_receiver import MQTTReceiver
-from util.web_socket_client import start_ws_client
 from util.web_socket_server import start_ws_server
 
 CLOUD_SERVER = 0
@@ -33,7 +32,6 @@ def _setup_server():
 
 def _setup_client():
     threading.Thread(target=_setup_mqtt_forwarder).start()
-    threading.Thread(target=start_ws_client).start()
     # TODO: setup websocket client
 
 
