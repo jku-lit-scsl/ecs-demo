@@ -11,6 +11,7 @@ host = CONFIG.network_conf['my_ip']
 
 OM = ''
 
+
 async def handle_msg_receive(websocket, path):
     try:
         while True:
