@@ -1,7 +1,4 @@
-import logging
 import time
-
-from secure_mod.defcon_handler import DefconHandler
 
 
 class IDSMQTTException(Exception):
@@ -36,9 +33,4 @@ def rate_checker():
 
 
 def check_new_msg():
-    try:
-        rate_checker()
-    except IDSMQTTException as e:
-        logging.warning(e)
-        dch = DefconHandler()
-        dch.increase()
+    rate_checker()

@@ -4,11 +4,12 @@ import logging
 from paho.mqtt import client as mqtt_client
 
 import config.config as CONFIG
-from secure_mod.intrusion_detector import check_new_msg
+from secure_mod.intrusion_detector import check_new_msg, IDSMQTTException
 from util.utils import singleton, get_current_time_in_millis
 
 global receive_mqtt_client_id
 is_ids_on = False
+global defcon_handler
 
 
 def _set_globals():
@@ -44,9 +45,13 @@ class _MQTTReceiver:
         self.client.subscribe(topic)
 
     def on_message(self, client, userdata, msg):
-        global is_ids_on
+        global is_ids_on, defcon_handler
         if is_ids_on:
-            check_new_msg()
+            try:
+                check_new_msg()
+            except IDSMQTTException as e:
+                logging.warning(f'Exceeded MQTT msg threshold: {e}')
+                defcon_handler.increase()
 
         # if 'cpu' in msg.topic:
         # logging.info('received mqtt message: ' + msg.topic + " -> " + msg.payload.decode())
@@ -55,9 +60,15 @@ class _MQTTReceiver:
         self.client.loop_forever()
 
 
+def set_defcon_handler(dch):
+    global defcon_handler
+    defcon_handler = dch
+
+
 @singleton
 class MQTTReceiver:
     def __init__(self):
+        self.defcon_handler = None
         logging.info('Generating new MQTT receiver')
         _set_globals()
         self.mqtt_local_client = _MQTTReceiver()
