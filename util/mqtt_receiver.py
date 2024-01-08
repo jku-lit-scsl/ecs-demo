@@ -4,9 +4,11 @@ import logging
 from paho.mqtt import client as mqtt_client
 
 import config.config as CONFIG
+from secure_mod.intrusion_detector import check_new_msg
 from util.utils import singleton, get_current_time_in_millis
 
 global receive_mqtt_client_id
+is_ids_on = False
 
 
 def _set_globals():
@@ -42,7 +44,9 @@ class _MQTTReceiver:
         self.client.subscribe(topic)
 
     def on_message(self, client, userdata, msg):
-        pass
+        global is_ids_on
+        if is_ids_on:
+            check_new_msg()
         # logging.info('received mqtt message: ' + msg.topic + " -> " + msg.payload.decode())
 
     def loop(self):
@@ -62,3 +66,12 @@ class MQTTReceiver:
 
     def start_listening(self):
         self.mqtt_local_client.loop()
+
+    def set_ids(self, flag: bool):
+        """
+        Sets the MQTT IDS either on or off
+        :param flag: boolean to set the IDS on (True) or off (False)
+        :return: void
+        """
+        global is_ids_on
+        is_ids_on = flag

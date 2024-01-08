@@ -19,7 +19,7 @@ def get_virtual_memory() -> float:
     # psutil.virtual_memory().available * 100 / psutil.virtual_memory().total
 
 
-class MonitoringController():
+class MonitoringController:
     # the default frequency for measuring the cpu in seconds
     BASE_FREQUENCY = 1.0
 
@@ -44,7 +44,6 @@ class MonitoringController():
             if get_operating_mode() != CLOUD_SERVER:
                 mqtt_fw = MQTTForwarder()
                 mqtt_fw.publish('sensor/cpu', cpu_usage_str)
-            # TODO: forward the message somehow to the knowledge base when in other defcon mode
             time.sleep(self.current_frequency)
 
     def start_monitoring(self):
