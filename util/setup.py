@@ -24,7 +24,7 @@ def _setup_mqtt_receiver():
     global mqtt_receiver
     mqtt_receiver = MQTTReceiver()
     mqtt_receiver.subscribe('#')
-    mqtt_receiver.start_listening()
+    threading.Thread(target=mqtt_receiver.start_listening).start()
 
 
 def get_mqtt_receiver():
@@ -34,7 +34,7 @@ def get_mqtt_receiver():
 
 def _setup_server():
     global OPERATING_MODE
-    threading.Thread(target=_setup_mqtt_receiver).start()
+    _setup_mqtt_receiver()
     threading.Thread(target=start_ws_server, args=(OPERATING_MODE,)).start()
     # TODO: setup websocket server
 
