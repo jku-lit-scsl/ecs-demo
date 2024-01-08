@@ -47,6 +47,8 @@ class _MQTTReceiver:
         global is_ids_on
         if is_ids_on:
             check_new_msg()
+
+        # if 'cpu' in msg.topic:
         # logging.info('received mqtt message: ' + msg.topic + " -> " + msg.payload.decode())
 
     def loop(self):

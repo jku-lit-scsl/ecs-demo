@@ -12,13 +12,23 @@ EDGE_DEVICE = 2
 
 OPERATING_MODE = None
 
+global mqtt_receiver
+
 
 def _setup_mqtt_forwarder():
     if CONFIG.network_conf['my_ip'] == '192.168.68.61':
         collect_dht22_data()
 
 
+def get_mqtt_receiver():
+    global mqtt_receiver
+    if mqtt_receiver:
+        return mqtt_receiver
+    return None
+
+
 def _setup_mqtt_receiver():
+    global mqtt_receiver
     mqtt_receiver = MQTTReceiver()
     mqtt_receiver.subscribe('#')
     mqtt_receiver.start_listening()

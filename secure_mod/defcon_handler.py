@@ -5,7 +5,6 @@ from statemachine.exceptions import TransitionNotAllowed
 
 from config.config import network_conf
 from secure_mod.monitoring_controller import MonitoringController
-from util.mqtt_receiver import MQTTReceiver
 from util.setup import get_operating_mode, CLOUD_SERVER
 from util.utils import send_update_knowledge_base, singleton
 
@@ -14,10 +13,11 @@ from util.utils import send_update_knowledge_base, singleton
 class DefconHandler(StateMachine):
     """Defcon modes handler"""
 
-    def __init__(self):
+    def __init__(self, mqtt_receiver):
         # init base monitoring
         self.monController = MonitoringController()
         self.monController.start_monitoring()
+        self.mqtt_receiver = mqtt_receiver
         super().__init__()
 
     defcon_5_normal = State(initial=True)
@@ -71,13 +71,13 @@ class DefconHandler(StateMachine):
         self.monController.set_new_frequency(new_fq)
 
         # reset defcon 3
-        mqtt_receiver = MQTTReceiver()
-        mqtt_receiver.set_ids(False)
+        if self.mqtt_receiver:
+            self.mqtt_receiver.set_ids(False)
 
     def on_enter_defcon_3_adv_sec(self):
         # set defcon 3
-        mqtt_receiver = MQTTReceiver()
-        mqtt_receiver.set_ids(True)
+        if self.mqtt_receiver:
+            self.mqtt_receiver.set_ids(True)
         # TODO: reset defcon 2
 
     def on_enter_defcon_2_restrict(self):
