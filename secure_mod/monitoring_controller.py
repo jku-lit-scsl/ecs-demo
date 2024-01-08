@@ -23,9 +23,10 @@ class MonitoringController:
     # the default frequency for measuring the cpu in seconds
     BASE_FREQUENCY = 1.0
 
-    def __init__(self):
+    def __init__(self, defcon_handler):
         self.current_frequency = self.BASE_FREQUENCY
         self.stop_thread_flag = False
+        self.defcon_handler = defcon_handler
 
     def set_new_frequency(self, new_frequency):
         """Sets a new monitoring frequency"""
@@ -37,10 +38,16 @@ class MonitoringController:
 
     def _monitor(self):
         while not self.stop_thread_flag:
+            cpu_usage = get_cpu_usage()
             cpu_usage_str = {
-                'CPU-Usage': get_cpu_usage(),
+                'CPU-Usage': cpu_usage,
                 'RAM-Usage': get_virtual_memory()
             }
+
+            if cpu_usage > 50.0:
+                if self.defcon_handler.current_state.id == 'defcon_5_normal':
+                    self.defcon_handler.increase()
+
             if get_operating_mode() != CLOUD_SERVER:
                 mqtt_fw = MQTTForwarder()
                 mqtt_fw.publish('sensor/cpu', cpu_usage_str)

@@ -15,7 +15,7 @@ class DefconHandler(StateMachine):
 
     def __init__(self, mqtt_receiver):
         # init base monitoring
-        self.monController = MonitoringController()
+        self.monController = MonitoringController(self)
         self.monController.start_monitoring()
         self.mqtt_receiver = mqtt_receiver
         super().__init__()
