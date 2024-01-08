@@ -12,6 +12,8 @@ EDGE_DEVICE = 2
 
 OPERATING_MODE = None
 
+mqtt_receiver = None
+
 
 def _setup_mqtt_forwarder():
     if CONFIG.network_conf['my_ip'] == '192.168.68.61':
@@ -19,9 +21,15 @@ def _setup_mqtt_forwarder():
 
 
 def _setup_mqtt_receiver():
+    global mqtt_receiver
     mqtt_receiver = MQTTReceiver()
     mqtt_receiver.subscribe('#')
     mqtt_receiver.start_listening()
+
+
+def get_mqtt_receiver():
+    global mqtt_receiver
+    return mqtt_receiver
 
 
 def _setup_server():
