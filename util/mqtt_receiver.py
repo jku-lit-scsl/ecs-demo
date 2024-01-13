@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import logging
 import subprocess
+import threading
 
 from paho.mqtt import client as mqtt_client
 
@@ -75,6 +76,8 @@ class MQTTReceiver:
         logging.info('Generating new MQTT receiver')
         _set_globals()
         self.mqtt_local_client = _MQTTReceiver()
+        self.subscribe('#')
+        threading.Thread(target=self.start_listening).start()
 
     def subscribe(self, topic: str):
         """Publishes a new message on the specified topic"""

@@ -23,8 +23,6 @@ def _setup_mqtt_forwarder():
 def _setup_mqtt_receiver():
     global mqtt_receiver
     mqtt_receiver = MQTTReceiver()
-    mqtt_receiver.subscribe('#')
-    threading.Thread(target=mqtt_receiver.start_listening).start()
 
 
 def get_mqtt_receiver():
