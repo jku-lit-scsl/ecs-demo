@@ -44,18 +44,6 @@ def _setup_client():
 
 def setup():
     """Basic configs for the application """
-    logging.basicConfig(
-        format='%(asctime)s.%(msecs)03d %(levelname)-8s %(message)s',  # Custom format with timestamp
-        datefmt='%Y-%m-%d    %H:%M:%S'  # Date format for the timestamp
-        # for logging to file
-        # handlers=[
-        #     logging.FileHandler(f"output/{get_current_time()}_output.log"),
-        #     logging.StreamHandler()
-        # ]
-    )
-    # set log level to info
-    logging.getLogger().setLevel(logging.INFO)
-
     global OPERATING_MODE
 
     # determine operating mode
