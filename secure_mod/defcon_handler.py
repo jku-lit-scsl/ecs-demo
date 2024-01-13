@@ -38,7 +38,7 @@ class DefconHandler(StateMachine):
         self.monController = MonitoringController(self)
         self.monController.start_monitoring()
         self.mqtt_receiver = mqtt_receiver
-        self.previous_state = self.current_state
+        self.previous_state = None
         super().__init__()
 
     def increase(self):
