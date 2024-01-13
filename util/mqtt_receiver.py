@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import logging
+import subprocess
 
 from paho.mqtt import client as mqtt_client
 
@@ -81,6 +82,21 @@ class MQTTReceiver:
 
     def start_listening(self):
         self.mqtt_local_client.loop()
+
+    def stop_broker_service(self):
+        try:
+            subprocess.run(["sudo", "systemctl", "stop", "mosquitto"], check=True)
+            logging.info("Mosquitto MQTT broker stopped successfully.")
+        except subprocess.CalledProcessError as e:
+            logging.error(f"Failed to stop Mosquitto MQTT broker: {e}")
+
+    def start_broker_service(self):
+        try:
+            subprocess.run(["sudo", "systemctl", "start", "mosquitto"], check=True)
+            logging.info("Mosquitto MQTT broker started successfully.")
+            self.__init__()
+        except subprocess.CalledProcessError as e:
+            logging.error(f"Failed to start Mosquitto MQTT broker: {e}")
 
     def set_ids(self, flag: bool):
         """

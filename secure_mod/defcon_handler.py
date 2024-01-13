@@ -13,13 +13,6 @@ from util.utils import send_update_knowledge_base, singleton
 class DefconHandler(StateMachine):
     """Defcon modes handler"""
 
-    def __init__(self, mqtt_receiver):
-        # init base monitoring
-        self.monController = MonitoringController(self)
-        self.monController.start_monitoring()
-        self.mqtt_receiver = mqtt_receiver
-        super().__init__()
-
     defcon_5_normal = State(initial=True)
     defcon_4_monitoring = State()
     defcon_3_adv_sec = State()
@@ -40,7 +33,16 @@ class DefconHandler(StateMachine):
             | defcon_4_monitoring.to(defcon_5_normal)
     )
 
+    def __init__(self, mqtt_receiver):
+        # init base monitoring
+        self.monController = MonitoringController(self)
+        self.monController.start_monitoring()
+        self.mqtt_receiver = mqtt_receiver
+        self.previous_state = self.current_state
+        super().__init__()
+
     def increase(self):
+        self.previous_state = self.current_state
         try:
             self.do_increase()
             logging.info(f"Increased defcon mode to: {self.current_state.id}")
@@ -51,6 +53,7 @@ class DefconHandler(StateMachine):
             logging.warning(f'Increase defcon mode not possible: {str(e)}')
 
     def decrease(self):
+        self.previous_state = self.current_state
         try:
             self.do_decrease()
             logging.info(f"Decreased defcon mode to: {self.current_state.id}")
@@ -75,13 +78,16 @@ class DefconHandler(StateMachine):
             self.mqtt_receiver.set_ids(False)
 
     def on_enter_defcon_3_adv_sec(self):
+        # TODO: reset defcon 2
+        if self.previous_state.id == 'defcon_2_restrict':
+            self.mqtt_receiver.start_broker_service()
+
         # set defcon 3
         if self.mqtt_receiver:
             self.mqtt_receiver.set_ids(True)
-        # TODO: reset defcon 2
 
     def on_enter_defcon_2_restrict(self):
-        # TODO: disable mqtt
+        self.mqtt_receiver.stop_broker_service()
         # TODO: reset defcon 1
         pass
 
