@@ -3,7 +3,9 @@ import logging
 from statemachine import StateMachine, State
 from statemachine.exceptions import TransitionNotAllowed
 
+from Adafruit_Python_DHT.examples.AdafruitDHT import set_qos_temperature
 from config.config import network_conf
+from secure_mod.intrusion_detector import set_max_calls
 from secure_mod.monitoring_controller import MonitoringController
 from util.setup import get_operating_mode, CLOUD_SERVER
 from util.utils import send_update_knowledge_base, singleton
@@ -63,6 +65,10 @@ class DefconHandler(StateMachine):
             logging.warning(f'Decrease defcon mode not possible: {str(e)}')
 
     def on_enter_defcon_5_normal(self):
+
+        self.mqtt_receiver.set_ids(True)
+        set_max_calls(150)
+
         # reset defcon 4
         self.monController.reset_frequency()
         pass
@@ -72,27 +78,26 @@ class DefconHandler(StateMachine):
         new_fq = 0.5
         logging.info(f"Set new monitoring frequency of CPU load to: {new_fq}")
         self.monController.set_new_frequency(new_fq)
+        set_max_calls(500)
 
         # reset defcon 3
         if self.mqtt_receiver:
             self.mqtt_receiver.set_ids(False)
 
     def on_enter_defcon_3_adv_sec(self):
-        # TODO: reset defcon 2
-        if self.previous_state.id == 'defcon_2_restrict':
-            self.mqtt_receiver.start_broker_service()
-
+        set_max_calls(1000)
+        set_qos_temperature(0)
         # set defcon 3
-        if self.mqtt_receiver:
-            self.mqtt_receiver.set_ids(True)
 
     def on_enter_defcon_2_restrict(self):
-        self.mqtt_receiver.stop_broker_service()
-        # TODO: reset defcon 1
-        pass
+        set_max_calls(1500)
+        if self.previous_state.id == 'defcon_1_localize':
+            self.mqtt_receiver.start_broker_service()
+        set_qos_temperature(2)
 
     def on_enter_defcon_1_localize(self):
-        # TODO: shutdown device
+        self.mqtt_receiver.stop_broker_service()
+        # send critical data via websockets
         pass
 
     def get_current_state(self):

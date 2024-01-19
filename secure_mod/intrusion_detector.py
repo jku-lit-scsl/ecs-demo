@@ -1,5 +1,7 @@
 import time
 
+max_calls = 999999
+
 
 class IDSMQTTException(Exception):
     pass
@@ -27,7 +29,12 @@ class RateLimiter:
         return wrapper
 
 
-@RateLimiter(max_calls=100, period=10)  # Limit to 100 calls per 10 seconds
+def set_max_calls(new_max_calls: int):
+    global max_calls
+    max_calls = new_max_calls
+
+
+@RateLimiter(max_calls=max_calls, period=60)  # Limit to max_calls calls per minute
 def rate_checker():
     pass
 

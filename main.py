@@ -1,5 +1,4 @@
 import logging
-import time
 
 from secure_mod.defcon_handler import DefconHandler
 from util.mqtt_receiver import set_defcon_handler
@@ -20,9 +19,9 @@ if __name__ == '__main__':
     mqtt_receiver = get_mqtt_receiver()
     defcon_handler = DefconHandler(mqtt_receiver)
     set_defcon_handler(defcon_handler)
-    defcon_handler.increase()
-    defcon_handler.increase()
-    defcon_handler.increase()
-    print("Waiting 5")
-    time.sleep(5)
-    defcon_handler.decrease()
+    # defcon_handler.increase()
+    # defcon_handler.increase()
+    # defcon_handler.increase()
+    # print("Waiting 5")
+    # time.sleep(5)
+    # defcon_handler.decrease()

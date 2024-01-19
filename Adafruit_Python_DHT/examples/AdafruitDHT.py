@@ -14,6 +14,18 @@ except ModuleNotFoundError as e:
 
 from util.mqtt_forwarder import MQTTForwarder
 
+critical_qos = 0
+
+
+def set_qos_temperature(qos):
+    """
+    Sets the QoS attribute for publishing the temperature measurements.
+    :param qos: QoS as number, either 0, 1, 2
+    :return: void
+    """
+    global critical_qos
+    critical_qos = qos
+
 
 def collect_dht22_data():
     mqtt_fw = MQTTForwarder()
@@ -24,5 +36,5 @@ def collect_dht22_data():
             'humidity': humidity,
             'temperature': temperature,
         }
-        mqtt_fw.publish('sensor/dht22', msg)
+        mqtt_fw.publish('sensor/dht22', msg, critical_qos)
         time.sleep(1)

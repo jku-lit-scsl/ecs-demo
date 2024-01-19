@@ -38,14 +38,14 @@ class _MQTTForwarder:
         self.client = client
         logging.info('local mqtt is set up')
 
-    def publish_local(self, topic, message):
+    def publish_local(self, topic, message, qos):
         topic = f"{CONFIG.network_conf['my_ip']}/{topic}"
         message = {
             'data': message,
             'timestamp_sent': get_current_time_in_millis()
         }
         # logging.info(f'MQTT publish: topic->{topic} | msg->{message}')
-        self.client.publish(topic=topic, payload=json.dumps(message))
+        self.client.publish(topic=topic, payload=json.dumps(message), qos=qos)
 
 
 @singleton
@@ -55,6 +55,6 @@ class MQTTForwarder:
         _set_globals()
         self.mqtt_local_client = _MQTTForwarder()
 
-    def publish(self, topic: str, message):
+    def publish(self, topic: str, message, qos=0):
         """Publishes a new message on the specified topic"""
-        self.mqtt_local_client.publish_local(topic, message)
+        self.mqtt_local_client.publish_local(topic, message, qos)

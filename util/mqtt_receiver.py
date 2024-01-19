@@ -53,9 +53,8 @@ class _MQTTReceiver:
                 check_new_msg()
             except IDSMQTTException as e:
                 logging.warning(f'Exceeded MQTT msg threshold: {e}')
-                if defcon_handler.current_state.id == 'defcon_3_adv_sec':
-                    defcon_handler.increase()
-                    # TODO: also increase defcon of clients once the server is at defcon 3 for this mqtt msgs, the clients should also increas
+                defcon_handler.increase()
+                # TODO: also increase defcon of clients once the server is at defcon 3 for this mqtt msgs, the clients should also increas
 
         # if 'cpu' in msg.topic:
         # logging.info('received mqtt message: ' + msg.topic + " -> " + msg.payload.decode())

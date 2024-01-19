@@ -34,12 +34,10 @@ def _setup_server():
     global OPERATING_MODE
     _setup_mqtt_receiver()
     threading.Thread(target=start_ws_server, args=(OPERATING_MODE,)).start()
-    # TODO: setup websocket server
 
 
 def _setup_client():
     threading.Thread(target=_setup_mqtt_forwarder).start()
-    # TODO: setup websocket client
 
 
 def setup():
