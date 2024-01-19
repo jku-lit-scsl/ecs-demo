@@ -1,7 +1,5 @@
 import time
 
-max_calls = 999999
-
 
 class IDSMQTTException(Exception):
     pass
@@ -12,6 +10,9 @@ class RateLimiter:
         self.max_calls = max_calls
         self.period = period
         self.call_times = []
+
+    def update_max_calls(self, new_max_calls):
+        self.max_calls = new_max_calls
 
     def __call__(self, func):
         def wrapper(*args, **kwargs):
@@ -29,14 +30,17 @@ class RateLimiter:
         return wrapper
 
 
-def set_max_calls(new_max_calls: int):
-    global max_calls
-    max_calls = new_max_calls
+# Create a RateLimiter instance
+rate_limiter = RateLimiter(max_calls=999999, period=60)
 
 
-@RateLimiter(max_calls=max_calls, period=60)  # Limit to max_calls calls per minute
+@rate_limiter  # Limit to max_calls calls per minute
 def rate_checker():
     pass
+
+
+def set_max_calls(new_max_calls: int):
+    rate_limiter.update_max_calls(new_max_calls)
 
 
 def check_new_msg():
