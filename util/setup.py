@@ -4,6 +4,7 @@ import threading
 import config.config as CONFIG
 from Adafruit_Python_DHT.examples.AdafruitDHT import collect_dht22_data
 from util.mqtt_receiver import MQTTReceiver
+from util.utils import start_mosquitto_service
 from util.web_socket_server import start_ws_server
 
 CLOUD_SERVER = 0
@@ -31,6 +32,9 @@ def get_mqtt_receiver():
 
 
 def _setup_server():
+    # ensure that mosquitto is running
+    start_mosquitto_service()
+
     global OPERATING_MODE
     _setup_mqtt_receiver()
     threading.Thread(target=start_ws_server, args=(OPERATING_MODE,)).start()

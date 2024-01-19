@@ -2,6 +2,7 @@ import datetime
 import json
 import logging
 import os.path
+import subprocess
 import threading
 import time
 import uuid
@@ -24,6 +25,14 @@ def generate_timestamp_for_filename():
 
 
 latency_log_file = f"{generate_timestamp_for_filename()}_log_file.txt"
+
+
+def start_mosquitto_service():
+    try:
+        subprocess.run(["sudo", "systemctl", "start", "mosquitto.service"], check=True)
+        logging.info("Mosquitto service started successfully.")
+    except subprocess.CalledProcessError as e:
+        logging.error(f"An error occurred while starting Mosquitto service: {e}")
 
 
 def send_update_knowledge_base(defcon_lvl, ip):
