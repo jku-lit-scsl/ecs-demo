@@ -88,7 +88,7 @@ def write_latency_log(log_string: str, file_name=os.path.join(PROJ_ROOT, latency
     :param file_name: The name of the file to which the log will be written. Default is the latency logfile generated with a timestamp
     """
     with open(file_name, "a") as file:
-        file.write(log_string + "\n")
+        file.write(f'{generate_timestamp_for_filename}    {log_string}\n')
 
 
 def log_latency(mqtt_msg):
