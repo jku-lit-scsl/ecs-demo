@@ -66,7 +66,8 @@ class DefconHandler(StateMachine):
 
     def on_enter_defcon_5_normal(self):
 
-        self.mqtt_receiver.set_ids(True)
+        if self.mqtt_receiver:
+            self.mqtt_receiver.set_ids(True)
         set_max_calls(150)
 
         # reset defcon 4
