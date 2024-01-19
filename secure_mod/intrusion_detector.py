@@ -1,3 +1,4 @@
+import logging
 import time
 
 
@@ -12,6 +13,7 @@ class RateLimiter:
         self.call_times = []
 
     def update_max_calls(self, new_max_calls):
+        logging.info(f'Updated MQTT msg rate to max {new_max_calls}')
         self.max_calls = new_max_calls
 
     def __call__(self, func):
