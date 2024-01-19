@@ -1,11 +1,37 @@
 #!/bin/bash
 
+NTP_SERVERS=(
+    "0.ubuntu.pool.ntp.org"
+    "1.ubuntu.pool.ntp.org"
+    "2.ubuntu.pool.ntp.org"
+    "3.ubuntu.pool.ntp.org"
+)
+
+sudo timedatectl set-timezone Europe/Vienna
+
+
 # Set up Git credential caching
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=43200'
 
-# Install Python 3.11 and its development tools
-sudo apt-get install build-essential python3.11 python3.11-venv python3.11-dev
+# Install required tools
+sudo apt-get install -y build-essential python3.11 python3.11-venv python3.11-dev ntp
+
+# Add NTP servers to the configuration
+{
+    echo "# Custom NTP servers"
+    for server in "${NTP_SERVERS[@]}"; do
+        echo "server $server iburst"
+    done
+} | sudo tee /etc/ntp.conf
+
+# Restart and enable NTP service
+sudo systemctl restart ntp
+sudo systemctl enable ntp
+
+# Display the NTP service status
+echo "NTP service status:"
+sudo systemctl status ntp | grep "Active"
 
 # Create a Python virtual environment
 python3.11 -m venv venv311

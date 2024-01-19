@@ -15,6 +15,7 @@ except ModuleNotFoundError as e:
 from util.mqtt_forwarder import MQTTForwarder
 
 critical_qos = 0
+sleep_time = 1
 
 
 def set_qos_temperature(qos):
@@ -27,7 +28,13 @@ def set_qos_temperature(qos):
     critical_qos = qos
 
 
+def set_sleep_time(new_time):
+    global sleep_time
+    sleep_time = new_time
+
+
 def collect_dht22_data():
+    global sleep_time
     mqtt_fw = MQTTForwarder()
 
     while True:
@@ -37,4 +44,4 @@ def collect_dht22_data():
             'temperature': temperature,
         }
         mqtt_fw.publish('sensor/dht22', msg, critical_qos)
-        time.sleep(1)
+        time.sleep(sleep_time)
