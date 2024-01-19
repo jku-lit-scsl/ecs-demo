@@ -81,10 +81,6 @@ class DefconHandler(StateMachine):
         self.monController.set_new_frequency(new_fq)
         set_max_calls(500)
 
-        # reset defcon 3
-        if self.mqtt_receiver:
-            self.mqtt_receiver.set_ids(False)
-
     def on_enter_defcon_3_adv_sec(self):
         set_max_calls(1000)
         set_qos_temperature(0)
