@@ -4,7 +4,7 @@ import threading
 import config.config as CONFIG
 from Adafruit_Python_DHT.examples.AdafruitDHT import collect_dht22_data
 from util.mqtt_receiver import MQTTReceiver
-from util.utils import start_mosquitto_service
+from util.utils import start_mosquitto_service, synchronize_system_time
 from util.web_socket_server import start_ws_server
 
 CLOUD_SERVER = 0
@@ -47,6 +47,8 @@ def _setup_client():
 def setup():
     """Basic configs for the application """
     global OPERATING_MODE
+
+    synchronize_system_time()
 
     # determine operating mode
     if CONFIG.network_conf['server_ip'] and len(CONFIG.network_conf['client_ips']) > 0:

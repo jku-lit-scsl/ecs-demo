@@ -3,6 +3,7 @@ import json
 import logging
 import os.path
 import subprocess
+import sys
 import threading
 import time
 import uuid
@@ -13,6 +14,36 @@ import pytz
 from util.web_socket_client import send_msg_websocket
 
 PROJ_ROOT = proj_root = Path(__file__).parent.parent
+
+
+def synchronize_system_time(ntp_server="pool.ntp.org"):
+    """
+    Synchronizes the system time with the specified NTP server.
+
+    :param ntp_server: The NTP server to synchronize with. Defaults to 'pool.ntp.org'.
+    """
+    try:
+        # Check if ntpd or chrony is installed
+        ntp_installed = subprocess.run(["which", "ntpd"], stdout=subprocess.DEVNULL).returncode == 0
+        chrony_installed = subprocess.run(["which", "chronyd"], stdout=subprocess.DEVNULL).returncode == 0
+
+        if ntp_installed:
+            # Stop the NTP service, synchronize the time, and start the service again
+            subprocess.run(["sudo", "service", "ntp", "stop"], check=True)
+            subprocess.run(["sudo", "ntpd", "-gq"], check=True)
+            subprocess.run(["sudo", "service", "ntp", "start"], check=True)
+        elif chrony_installed:
+            # Using chrony to synchronize time
+            subprocess.run(["sudo", "chronyc", "makestep"], check=True)
+        else:
+            logging.error("No NTP synchronization tool (ntpd or chrony) is installed.")
+            sys.exit(1)
+
+        logging.info("Time synchronization complete.")
+    except subprocess.CalledProcessError as e:
+        logging.error(f"An error occurred: {e}")
+    except Exception as e:
+        logging.error(f"An unexpected error occurred: {e}")
 
 
 def generate_timestamp_for_filename():
