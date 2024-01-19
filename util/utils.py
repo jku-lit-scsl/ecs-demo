@@ -49,7 +49,7 @@ def send_update_knowledge_base(defcon_lvl, ip):
     threading.Thread(target=send_msg_websocket, args=(json.dumps(msg),)).start()
 
 
-def write_latency_log(log_string, file_name=os.path.join(PROJ_ROOT, latency_log_file)):
+def write_latency_log(log_string: str, file_name=os.path.join(PROJ_ROOT, latency_log_file)):
     """
     Appends the given log string to a log file.
 
@@ -66,7 +66,7 @@ def log_latency(mqtt_msg):
         msg_obj = json.loads(mqtt_msg.payload.decode())
         latency_for_msg = get_current_time_in_millis() - int(msg_obj['timestamp_sent'])
         logging.info(f'latency: {latency_for_msg}')
-        write_latency_log(latency_for_msg)
+        write_latency_log(str(latency_for_msg))
 
 
 def get_current_time_in_millis() -> int:
