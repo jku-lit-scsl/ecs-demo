@@ -60,7 +60,7 @@ class DefconHandler(StateMachine):
             logging.info(f"Increased defcon mode to: {self.current_state.id}")
 
             if get_operating_mode() != CLOUD_SERVER:
-                send_update_knowledge_base(self.current_state.id, network_conf['my_ip'])
+                send_update_knowledge_base(self, self.current_state.id, network_conf['my_ip'])
         except TransitionNotAllowed as e:
             logging.warning(f'Increase defcon mode not possible: {str(e)}')
 
@@ -70,7 +70,7 @@ class DefconHandler(StateMachine):
             self.do_decrease()
             logging.info(f"Decreased defcon mode to: {self.current_state.id}")
             if get_operating_mode() != CLOUD_SERVER:
-                send_update_knowledge_base(self.current_state.id, network_conf['my_ip'])
+                send_update_knowledge_base(self, self.current_state.id, network_conf['my_ip'])
         except TransitionNotAllowed as e:
             logging.warning(f'Decrease defcon mode not possible: {str(e)}')
 
