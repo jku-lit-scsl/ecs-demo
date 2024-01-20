@@ -7,7 +7,7 @@ from paho.mqtt import client as mqtt_client
 
 import config.config as CONFIG
 from secure_mod.intrusion_detector import check_new_msg, IDSMQTTException
-from util.utils import singleton, get_current_time_in_millis, log_latency
+from util.utils import singleton, get_current_time_in_millis
 
 global receive_mqtt_client_id
 is_ids_on = False
@@ -56,7 +56,7 @@ class _MQTTReceiver:
                 defcon_handler.increase()
                 # TODO: also increase defcon of clients once the server is at defcon 3 for this mqtt msgs, the clients should also increas
 
-        threading.Thread(target=log_latency, args=(msg,)).start()
+        # threading.Thread(target=log_latency, args=(msg,)).start()
 
     def loop(self):
         self.client.loop_forever()
