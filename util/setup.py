@@ -1,8 +1,10 @@
 import logging
 import threading
+import time
 
 import config.config as CONFIG
 from Adafruit_Python_DHT.examples.AdafruitDHT import collect_dht22_data
+from secure_mod.monitoring_controller import get_cpu_usage
 from util.mqtt_receiver import MQTTReceiver
 from util.utils import start_mosquitto_service, synchronize_system_time
 from util.web_socket_server import start_ws_server
@@ -44,6 +46,22 @@ def _setup_client():
     threading.Thread(target=_setup_mqtt_forwarder).start()
 
 
+def log_cpu_usage_every_second():
+    def log_at_full_second():
+        while True:
+            # Get the current time
+            current_time = time.time()
+
+            # Calculate how long to sleep to wake up at the next full second
+            sleep_time = 1 - (current_time % 1)
+
+            # Sleep until the next full second
+            time.sleep(sleep_time)
+
+            # Log the message
+            logging.info(f'CPU usage in percent: >{get_cpu_usage()}<')
+
+
 def setup_logging():
     # Remove any existing handlers
     for handler in logging.root.handlers[:]:
@@ -58,6 +76,8 @@ def setup_logging():
     # Add the handler to the root logger
     logging.getLogger().addHandler(console_handler)
     logging.getLogger().setLevel(logging.INFO)
+
+    threading.Thread(target=log_cpu_usage_every_second).start()
 
 
 def setup():
