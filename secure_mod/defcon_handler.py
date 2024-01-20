@@ -1,13 +1,15 @@
 import logging
+import threading
 
 from statemachine import StateMachine, State
 from statemachine.exceptions import TransitionNotAllowed
 
 from Adafruit_Python_DHT.examples.AdafruitDHT import set_qos_temperature, set_sleep_time
-from config.config import network_conf
+from config.config import network_conf, EDGE_DEVICE
 from secure_mod.monitoring_controller import MonitoringController
 from util.setup import get_operating_mode, CLOUD_SERVER
-from util.utils import send_update_knowledge_base, singleton
+from util.utils import send_update_knowledge_base, singleton, heartbeat_updater
+from util.web_socket_server import set_defcon_handler
 
 
 @singleton
@@ -42,9 +44,14 @@ class DefconHandler(StateMachine):
         self.previous_state = None
         super().__init__()
 
-    def send_init_heartbeat(self):
+    def init_heartbeat(self):
+        if get_operating_mode() != EDGE_DEVICE:
+            # todo set defcon handler in server
+            set_defcon_handler(self)
+
         if get_operating_mode() != CLOUD_SERVER:
-            send_update_knowledge_base(self.current_state.id, network_conf['my_ip'])
+            threading.Thread(target=heartbeat_updater,
+                             args=(self, self.current_state.id, network_conf['my_ip'], 5,)).start()
 
     def increase(self):
         self.previous_state = self.current_state

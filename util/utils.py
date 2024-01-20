@@ -66,18 +66,24 @@ def start_mosquitto_service():
         logging.error(f"An error occurred while starting Mosquitto service: {e}")
 
 
-def send_update_knowledge_base(defcon_lvl, ip):
+def heartbeat_updater(defcon_handler, defcon_level, ip, sleep_timer):
+    while True:
+        send_update_knowledge_base(defcon_handler, defcon_level, ip)
+        time.sleep(sleep_timer)
+
+
+def send_update_knowledge_base(defcon_handler, defcon_level, ip):
     """
     Takes the defcon level as param and saves it locally and, if possible, sends it to the parent system
-    :param defcon_lvl: the new defcon level to be stored
+    :param defcon_handler: the defcon handler object
+    :param defcon_level: the new defcon level to be stored
     :return: void
     """
-    # TODO: save in local knowledgebase
     msg = {
-        'defcon_lvl': defcon_lvl,
+        'defcon_lvl': defcon_level,
         'ip': ip
     }
-    threading.Thread(target=send_msg_websocket, args=(json.dumps(msg),)).start()
+    threading.Thread(target=send_msg_websocket, args=(json.dumps(msg), defcon_handler,)).start()
 
 
 def write_latency_log(log_string: str, file_name=os.path.join(PROJ_ROOT, latency_log_file)):
