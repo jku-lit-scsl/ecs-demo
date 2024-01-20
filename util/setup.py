@@ -44,9 +44,27 @@ def _setup_client():
     threading.Thread(target=_setup_mqtt_forwarder).start()
 
 
+def setup_logging():
+    # Remove any existing handlers
+    for handler in logging.root.handlers[:]:
+        logging.root.removeHandler(handler)
+
+    # Create a StreamHandler with the desired settings
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)
+    formatter = logging.Formatter('%(asctime)s.%(msecs)03d %(levelname)-8s %(message)s', '%Y-%m-%d %H:%M:%S')
+    console_handler.setFormatter(formatter)
+
+    # Add the handler to the root logger
+    logging.getLogger().addHandler(console_handler)
+    logging.getLogger().setLevel(logging.INFO)
+
+
 def setup():
     """Basic configs for the application """
     global OPERATING_MODE
+
+    setup_logging()
 
     synchronize_system_time()
 
