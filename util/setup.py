@@ -46,19 +46,18 @@ def _setup_client():
 
 
 def log_cpu_usage_every_second():
-    def log_at_full_second():
-        while True:
-            # Get the current time
-            current_time = time.time()
+    while True:
+        # Get the current time
+        current_time = time.time()
 
-            # Calculate how long to sleep to wake up at the next full second
-            sleep_time = 1 - (current_time % 1)
+        # Calculate how long to sleep to wake up at the next full second
+        sleep_time = 1 - (current_time % 1)
 
-            # Sleep until the next full second
-            time.sleep(sleep_time)
+        # Sleep until the next full second
+        time.sleep(sleep_time)
 
-            # Log the message
-            logging.info(f'CPU usage in percent: >{get_cpu_usage()}<')
+        # Log the message
+        logging.info(f'CPU usage in percent: >{get_cpu_usage()}<')
 
 
 def setup_logging():
