@@ -36,10 +36,10 @@ async def handle_msg_receive(websocket, path):
 async def broadcast_defcon_change_to_clients(message_obj):
     for client in clients:
         await client.send(
-            {
+            json.dumps({
                 'adaptation': 'defcon_change',
                 'new_defcon': message_obj['defcon_lvl']
-            }
+            })
         )
 
 
