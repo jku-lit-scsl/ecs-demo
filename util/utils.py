@@ -9,11 +9,24 @@ import time
 import uuid
 from pathlib import Path
 
+import psutil
 import pytz
 
 from util.web_socket_client import send_msg_websocket
 
 PROJ_ROOT = proj_root = Path(__file__).parent.parent
+
+
+def get_cpu_usage() -> float:
+    """Returns the CPU usage in percent"""
+    return psutil.cpu_percent(interval=None)
+
+
+def get_virtual_memory() -> float:
+    """Returns the memory usage in percent"""
+    return psutil.virtual_memory().percent
+    # you can calculate percentage of available memory
+    # psutil.virtual_memory().available * 100 / psutil.virtual_memory().total
 
 
 def synchronize_system_time(ntp_server="pool.ntp.org"):

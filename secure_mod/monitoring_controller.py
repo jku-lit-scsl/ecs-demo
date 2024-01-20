@@ -1,22 +1,9 @@
 import threading
 import time
 
-import psutil
-
 from util.mqtt_forwarder import MQTTForwarder
 from util.setup import CLOUD_SERVER, get_operating_mode
-
-
-def get_cpu_usage() -> float:
-    """Returns the CPU usage in percent"""
-    return psutil.cpu_percent(interval=None)
-
-
-def get_virtual_memory() -> float:
-    """Returns the memory usage in percent"""
-    return psutil.virtual_memory().percent
-    # you can calculate percentage of available memory
-    # psutil.virtual_memory().available * 100 / psutil.virtual_memory().total
+from util.utils import get_cpu_usage, get_virtual_memory
 
 
 class MonitoringController:

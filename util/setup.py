@@ -4,9 +4,8 @@ import time
 
 import config.config as CONFIG
 from Adafruit_Python_DHT.examples.AdafruitDHT import collect_dht22_data
-from secure_mod.monitoring_controller import get_cpu_usage
 from util.mqtt_receiver import MQTTReceiver
-from util.utils import start_mosquitto_service, synchronize_system_time
+from util.utils import start_mosquitto_service, synchronize_system_time, get_cpu_usage
 from util.web_socket_server import start_ws_server
 
 CLOUD_SERVER = 0
