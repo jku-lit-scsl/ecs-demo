@@ -47,7 +47,7 @@ class DefconHandler(StateMachine):
     def init_heartbeat(self):
         if get_operating_mode() != EDGE_DEVICE:
             # todo set defcon handler in server
-            set_defcon_handler(self)
+            set_defcon_handler(dc_handler=self)
 
         if get_operating_mode() != CLOUD_SERVER:
             threading.Thread(target=heartbeat_updater,

@@ -68,17 +68,19 @@ def start_mosquitto_service():
 
 def heartbeat_updater(defcon_handler, defcon_level, ip, sleep_timer):
     while True:
-        send_update_knowledge_base(defcon_handler, defcon_level, ip)
+        send_update_knowledge_base(defcon_handler, defcon_level, ip, True)
         time.sleep(sleep_timer)
 
 
-def send_update_knowledge_base(defcon_handler, defcon_level, ip):
+def send_update_knowledge_base(defcon_handler, defcon_level, ip, isHeartBeatFlag):
     """
     Takes the defcon level as param and saves it locally and, if possible, sends it to the parent system
     :param defcon_handler: the defcon handler object
     :param defcon_level: the new defcon level to be stored
     :return: void
     """
+    if isHeartBeatFlag:
+        defcon_level = defcon_handler.current_state.id
     msg = {
         'defcon_lvl': defcon_level,
         'ip': ip
