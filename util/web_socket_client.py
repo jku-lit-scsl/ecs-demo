@@ -1,5 +1,6 @@
 import asyncio
 import json
+import logging
 
 import websockets
 
@@ -14,6 +15,7 @@ async def _send_msg_ws(message, defcon_handler):
         await websocket.send(message)
         response = await websocket.recv()
         response_obj = json.loads(response)
+        logging.info(f'received new msg from server >>>{response}')
         # if parent's defcon is greate than own, increase own defcon lvl
         if response_obj['defcon_lvl'] and int(defcon_handler.current_state.id[7]) > int(response_obj['defcon_lvl'][7]):
             defcon_handler.increase()
