@@ -43,6 +43,10 @@ class DefconHandler(StateMachine):
         self.previous_state = None
         super().__init__()
 
+    def send_init_heartbeat(self):
+        if get_operating_mode() != CLOUD_SERVER:
+            send_update_knowledge_base(self.current_state.id, network_conf['my_ip'])
+
     def increase(self):
         self.previous_state = self.current_state
         try:

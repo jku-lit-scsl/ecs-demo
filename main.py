@@ -19,6 +19,7 @@ if __name__ == '__main__':
     mqtt_receiver = get_mqtt_receiver()
     defcon_handler = DefconHandler(mqtt_receiver)
     set_defcon_handler(defcon_handler)
+    defcon_handler.send_init_heartbeat()
     # defcon_handler.increase()
     # defcon_handler.increase()
     # defcon_handler.increase()

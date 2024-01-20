@@ -1,10 +1,10 @@
 #!/bin/bash
 
 NTP_SERVERS=(
-    "0.ubuntu.pool.ntp.org"
-    "1.ubuntu.pool.ntp.org"
-    "2.ubuntu.pool.ntp.org"
-    "3.ubuntu.pool.ntp.org"
+    "server at.pool.ntp.org iburst"
+    "server europe.pool.ntp.org iburst"
+    "server ntps1-0.cs.tu-berlin.de iburst"
+    "server ntps1-1.cs.tu-berlin.de iburst"
 )
 
 sudo timedatectl set-timezone Europe/Vienna
