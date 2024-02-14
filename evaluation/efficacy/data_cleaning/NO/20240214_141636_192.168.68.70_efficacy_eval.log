@@ -3417,7 +3417,3 @@
 2024-02-14 14:43:09.825 INFO     [web_socket_server.py:41] Client disconnected
 2024-02-14 14:43:09.826 INFO     [server.py:264] connection closed
 2024-02-14 14:43:09.837 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.50"}
-2024-02-14 14:43:10.000 WARNING  [setup.py:61] CPU usage in percent: >27.2<
-2024-02-14 14:43:11.000 WARNING  [setup.py:61] CPU usage in percent: >52.9<
-2024-02-14 14:43:11.310 INFO     [defcon_handler.py:90] Set new monitoring frequency of CPU load to: 0.5
-2024-02-14 14:43:11.310 INFO     [defcon_handler.py:60] Increased defcon mode to: defcon_4_monitoring

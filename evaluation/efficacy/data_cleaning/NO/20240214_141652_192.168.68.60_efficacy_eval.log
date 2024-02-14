@@ -4767,15 +4767,3 @@
 2024-02-14 14:43:08.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
 2024-02-14 14:43:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
 2024-02-14 14:43:09.730 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.50"}
-2024-02-14 14:43:10.001 WARNING  [setup.py:61] CPU usage in percent: >1.3<
-2024-02-14 14:43:11.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
-2024-02-14 14:43:11.055 INFO     [server.py:642] connection open
-2024-02-14 14:43:11.063 INFO     [web_socket_server.py:25] Received new message >>> {'defcon_lvl': 'defcon_5_normal', 'ip': '192.168.68.61'}
-2024-02-14 14:43:11.078 INFO     [web_socket_server.py:41] Client disconnected
-2024-02-14 14:43:11.079 INFO     [server.py:264] connection closed
-2024-02-14 14:43:11.091 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.50"}
-2024-02-14 14:43:11.092 INFO     [server.py:642] connection open
-2024-02-14 14:43:11.100 INFO     [web_socket_server.py:25] Received new message >>> {'defcon_lvl': 'defcon_5_normal', 'ip': '192.168.68.71'}
-2024-02-14 14:43:11.120 INFO     [web_socket_server.py:41] Client disconnected
-2024-02-14 14:43:11.121 INFO     [server.py:264] connection closed
-2024-02-14 14:43:11.133 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.50"}

@@ -1770,6 +1770,3 @@
 2024-02-14 14:43:07.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
 2024-02-14 14:43:08.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
 2024-02-14 14:43:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
-2024-02-14 14:43:10.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
-2024-02-14 14:43:11.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
-2024-02-14 14:43:11.116 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
