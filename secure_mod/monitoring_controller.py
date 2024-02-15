@@ -1,3 +1,4 @@
+import logging
 import threading
 import time
 
@@ -24,6 +25,9 @@ class MonitoringController:
         self.current_frequency = self.BASE_FREQUENCY
 
     def _monitor(self):
+        # necessary for initial setup
+        time.sleep(60)
+        logging.info('Started CPU monitoring')
         while not self.stop_thread_flag:
             cpu_usage = get_cpu_usage()
             cpu_usage_str = {
@@ -33,18 +37,22 @@ class MonitoringController:
 
             if cpu_usage > 30.0:
                 if self.defcon_handler.current_state.id == 'defcon_5_normal':
+                    logging.error('Exceeding current CPU threshold')
                     self.defcon_handler.increase()
 
             if cpu_usage > 40.0:
                 if self.defcon_handler.current_state.id == 'defcon_4_monitoring':
+                    logging.error('Exceeding current CPU threshold')
                     self.defcon_handler.increase()
 
             if cpu_usage > 50.0:
                 if self.defcon_handler.current_state.id == 'defcon_3_adv_sec':
+                    logging.error('Exceeding current CPU threshold')
                     self.defcon_handler.increase()
 
             if cpu_usage > 60.0:
                 if self.defcon_handler.current_state.id == 'defcon_2_restrict':
+                    logging.error('Exceeding current CPU threshold')
                     self.defcon_handler.increase()
 
             if get_operating_mode() != CLOUD_SERVER:

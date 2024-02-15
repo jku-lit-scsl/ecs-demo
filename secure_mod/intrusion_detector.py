@@ -25,6 +25,7 @@ class RateLimiter:
             self.call_times = [t for t in self.call_times if current_time - t <= self.period]
 
             if len(self.call_times) > self.max_calls:
+                logging.error('Exceeded current msg threshold')
                 raise IDSMQTTException("Rate limit for MQTT exceeded.")
 
             return func(*args, **kwargs)
