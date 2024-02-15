@@ -43,21 +43,21 @@ class MonitoringController:
                     if outlier_counter == 5:
                         outlier_counter = 0
                         self.defcon_handler.increase()
-            elif cpu_usage > 40.0:
+            if cpu_usage > 40.0:
                 if self.defcon_handler.current_state.id == 'defcon_4_monitoring':
                     outlier_counter += 1
                     logging.error(f'Exceeding current CPU threshold: {cpu_usage}')
                     if outlier_counter == 5:
                         outlier_counter = 0
                         self.defcon_handler.increase()
-            elif cpu_usage > 50.0:
+            if cpu_usage > 50.0:
                 if self.defcon_handler.current_state.id == 'defcon_3_adv_sec':
                     outlier_counter += 1
                     logging.error(f'Exceeding current CPU threshold: {cpu_usage}')
                     if outlier_counter == 5:
                         outlier_counter = 0
                         self.defcon_handler.increase()
-            elif cpu_usage > 60.0:
+            if cpu_usage > 60.0:
                 if self.defcon_handler.current_state.id == 'defcon_2_restrict':
                     outlier_counter += 1
                     logging.error(f'Exceeding current CPU threshold: {cpu_usage}')
