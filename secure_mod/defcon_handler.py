@@ -6,6 +6,7 @@ from statemachine.exceptions import TransitionNotAllowed
 
 from Adafruit_Python_DHT.examples.AdafruitDHT import set_qos_temperature, set_sleep_time
 from config.config import network_conf, EDGE_DEVICE
+from secure_mod.intrusion_detector import set_max_calls
 from secure_mod.monitoring_controller import MonitoringController
 from util.setup import get_operating_mode, CLOUD_SERVER
 from util.utils import send_update_knowledge_base, singleton, heartbeat_updater
@@ -78,7 +79,7 @@ class DefconHandler(StateMachine):
 
         if self.mqtt_receiver:
             self.mqtt_receiver.set_ids(True)
-        # set_max_calls(150)
+        set_max_calls(80000)
 
         # reset defcon 4
         self.monController.reset_frequency()
@@ -89,16 +90,16 @@ class DefconHandler(StateMachine):
         new_fq = 0.5
         logging.info(f"Set new monitoring frequency of CPU load to: {new_fq}")
         self.monController.set_new_frequency(new_fq)
-        # set_max_calls(500)
+        set_max_calls(100000)
 
     def on_enter_defcon_3_adv_sec(self):
-        # set_max_calls(1000)
+        set_max_calls(120000)
         set_qos_temperature(0)
         # set rate limiting
         set_sleep_time(10)
 
     def on_enter_defcon_2_restrict(self):
-        # set_max_calls(1500)
+        set_max_calls(140000)
         if self.previous_state.id == 'defcon_1_localize':
             self.mqtt_receiver.start_broker_service()
         # set new QoS

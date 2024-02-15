@@ -31,19 +31,19 @@ class MonitoringController:
                 'RAM-Usage': get_virtual_memory()
             }
 
-            if cpu_usage > 40.0:
+            if cpu_usage > 30.0:
                 if self.defcon_handler.current_state.id == 'defcon_5_normal':
                     self.defcon_handler.increase()
 
-            if cpu_usage > 60.0:
+            if cpu_usage > 40.0:
                 if self.defcon_handler.current_state.id == 'defcon_4_monitoring':
                     self.defcon_handler.increase()
 
-            if cpu_usage > 75.0:
+            if cpu_usage > 50.0:
                 if self.defcon_handler.current_state.id == 'defcon_3_adv_sec':
                     self.defcon_handler.increase()
 
-            if cpu_usage > 90.0:
+            if cpu_usage > 60.0:
                 if self.defcon_handler.current_state.id == 'defcon_2_restrict':
                     self.defcon_handler.increase()
 
