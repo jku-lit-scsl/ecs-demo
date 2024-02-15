@@ -58,7 +58,7 @@ def log_cpu_usage_every_second():
         time.sleep(sleep_time)
 
         # Log the message
-        logging.info(f'CPU usage in percent: >{get_cpu_usage()}<')
+        logging.warning(f'CPU usage in percent: >{get_cpu_usage()}<')
 
 
 def setup_logging():
