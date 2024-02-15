@@ -1,0 +1,1638 @@
+2024-02-15 01:50:28.000 WARNING  [setup.py:61] CPU usage in percent: >100.0<
+2024-02-15 01:50:29.000 WARNING  [setup.py:61] CPU usage in percent: >24.9<
+2024-02-15 01:50:30.000 WARNING  [setup.py:61] CPU usage in percent: >25.1<
+2024-02-15 01:50:31.000 WARNING  [setup.py:61] CPU usage in percent: >25.3<
+2024-02-15 01:50:32.000 WARNING  [setup.py:61] CPU usage in percent: >25.1<
+2024-02-15 01:50:33.000 WARNING  [setup.py:61] CPU usage in percent: >25.5<
+2024-02-15 01:50:34.000 WARNING  [setup.py:61] CPU usage in percent: >25.1<
+2024-02-15 01:50:35.000 WARNING  [setup.py:61] CPU usage in percent: >25.3<
+2024-02-15 01:50:36.000 WARNING  [setup.py:61] CPU usage in percent: >25.3<
+2024-02-15 01:50:37.000 WARNING  [setup.py:61] CPU usage in percent: >25.1<
+2024-02-15 01:50:38.000 WARNING  [setup.py:61] CPU usage in percent: >25.3<
+2024-02-15 01:50:39.000 WARNING  [setup.py:61] CPU usage in percent: >25.0<
+2024-02-15 01:50:40.000 WARNING  [setup.py:61] CPU usage in percent: >25.8<
+2024-02-15 01:50:41.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:50:42.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:50:43.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:50:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:50:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:50:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:50:47.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:50:48.000 WARNING  [setup.py:61] CPU usage in percent: >25.4<
+2024-02-15 01:50:49.000 WARNING  [setup.py:61] CPU usage in percent: >25.3<
+2024-02-15 01:50:50.000 WARNING  [setup.py:61] CPU usage in percent: >25.1<
+2024-02-15 01:50:51.000 WARNING  [setup.py:61] CPU usage in percent: >25.3<
+2024-02-15 01:50:52.000 WARNING  [setup.py:61] CPU usage in percent: >25.2<
+2024-02-15 01:50:53.000 WARNING  [setup.py:61] CPU usage in percent: >25.1<
+2024-02-15 01:50:54.000 WARNING  [setup.py:61] CPU usage in percent: >25.3<
+2024-02-15 01:50:55.000 WARNING  [setup.py:61] CPU usage in percent: >25.1<
+2024-02-15 01:50:56.000 WARNING  [setup.py:61] CPU usage in percent: >25.0<
+2024-02-15 01:50:57.000 WARNING  [setup.py:61] CPU usage in percent: >25.3<
+2024-02-15 01:50:58.000 WARNING  [setup.py:61] CPU usage in percent: >25.2<
+2024-02-15 01:50:59.000 WARNING  [setup.py:61] CPU usage in percent: >25.1<
+2024-02-15 01:50:59.282 INFO     [utils.py:55] Time synchronization complete.
+2024-02-15 01:50:59.282 INFO     [setup.py:110] Set operating mode to Edge Device
+2024-02-15 01:50:59.283 INFO     [setup.py:111] my_ip = 192.168.68.61
+2024-02-15 01:50:59.283 INFO     [setup.py:112] server_ip = 192.168.68.60
+2024-02-15 01:50:59.283 INFO     [setup.py:113] client_ips = []
+2024-02-15 01:50:59.284 INFO     [mqtt_forwarder.py:54] Generating new MQTT Forwarder
+2024-02-15 01:50:59.289 INFO     [intrusion_detector.py:16] Updated MQTT msg rate to max 80000
+2024-02-15 01:50:59.305 INFO     [mqtt_forwarder.py:39] local mqtt is set up
+2024-02-15 01:50:59.893 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:51:00.001 WARNING  [setup.py:61] CPU usage in percent: >12.6<
+2024-02-15 01:51:01.363 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:51:02.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:51:03.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:51:04.417 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:51:04.445 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:51:05.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:51:06.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:51:07.469 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:51:08.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:51:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:51:09.448 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:51:10.522 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 01:51:11.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:51:12.048 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:51:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:51:14.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:51:14.447 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:51:15.100 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:51:16.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:51:17.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:51:18.152 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:51:19.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:51:19.703 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:51:20.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:51:21.205 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:51:22.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:51:23.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:51:24.257 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:51:24.705 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:51:25.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:51:26.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:51:27.308 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:51:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:51:29.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:51:29.706 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:51:30.361 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:51:31.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:51:32.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:51:33.414 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:51:34.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:51:34.964 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:51:35.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:51:36.467 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:51:37.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:51:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:51:39.519 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:51:39.972 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:51:40.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:51:41.045 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:51:42.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:51:43.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:51:44.098 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:51:44.974 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:51:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:51:46.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:51:47.150 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:51:48.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:51:49.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:51:50.206 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:51:50.229 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:51:51.000 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:51:52.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:51:53.257 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:51:54.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:51:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:51:55.236 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:51:56.310 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:51:57.001 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:51:58.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:51:59.361 INFO     [monitoring_controller.py:30] Started CPU monitoring
+2024-02-15 01:51:59.362 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:52:00.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:52:00.236 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:52:01.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 01:52:02.415 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:52:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:52:04.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:52:05.470 WARNING  [setup.py:61] CPU usage in percent: >1.4<
+2024-02-15 01:52:05.499 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:52:06.001 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:52:07.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:52:08.524 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:52:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:52:10.050 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:52:10.500 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:52:11.000 WARNING  [setup.py:61] CPU usage in percent: >1.6<
+2024-02-15 01:52:12.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:52:13.103 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:52:14.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:52:15.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:52:15.500 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:52:16.156 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:52:17.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:52:18.001 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:52:19.210 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:52:20.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:52:20.765 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:52:21.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 01:52:22.264 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:52:23.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:52:24.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:52:25.317 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:52:25.766 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:52:26.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:52:27.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:52:28.370 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:52:29.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:52:30.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:52:30.765 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:52:31.426 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:52:32.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:52:33.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:52:34.478 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:52:35.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:52:36.008 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:52:36.032 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:52:37.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:52:38.001 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:52:39.060 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:52:40.001 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:52:41.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:52:41.037 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:52:42.113 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:52:43.001 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:52:44.001 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:52:45.167 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:52:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:52:46.035 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:52:47.001 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:52:48.221 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:52:49.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:52:50.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:52:51.274 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:52:51.298 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:52:52.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:52:53.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:52:54.328 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:52:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:52:56.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:52:56.306 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:52:57.382 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:52:58.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:52:59.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:53:00.436 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:53:01.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:53:01.300 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:53:02.000 WARNING  [setup.py:61] CPU usage in percent: >1.7<
+2024-02-15 01:53:03.489 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:53:04.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:53:05.015 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:53:06.001 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:53:06.567 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:53:07.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:53:08.068 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:53:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:53:10.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:53:11.120 WARNING  [setup.py:61] CPU usage in percent: >2.0<
+2024-02-15 01:53:11.570 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:53:12.000 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:53:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:53:14.174 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:53:15.001 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:53:16.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:53:16.571 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:53:17.229 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:53:18.001 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:53:19.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:53:20.281 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:53:21.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:53:21.843 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:53:22.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 01:53:23.335 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:53:24.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:53:25.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:53:26.390 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:53:26.836 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:53:27.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:53:28.001 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:53:29.443 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:53:30.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:53:31.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:53:31.838 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:53:32.498 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:53:33.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:53:34.024 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:53:35.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:53:36.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:53:37.079 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:53:37.104 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:53:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:53:39.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:53:40.130 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:53:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:53:42.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:53:42.108 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:53:43.183 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:53:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:53:45.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:53:46.236 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:53:47.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:53:47.106 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:53:48.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:53:49.289 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:53:50.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:53:51.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:53:52.344 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:53:52.366 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:53:53.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:53:54.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:53:55.397 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:53:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:53:57.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:53:57.371 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:53:58.450 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:53:59.001 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:54:00.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:54:01.503 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:54:02.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:54:02.371 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:54:03.030 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:54:04.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:54:05.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:54:06.083 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:54:07.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:54:07.634 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:54:08.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:54:09.137 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:54:10.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:54:11.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 01:54:12.191 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:54:12.639 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:54:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:54:14.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:54:15.244 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:54:16.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:54:17.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:54:17.639 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:54:18.298 WARNING  [setup.py:61] CPU usage in percent: >1.4<
+2024-02-15 01:54:19.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:54:20.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:54:21.351 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:54:22.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:54:22.901 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:54:23.000 WARNING  [setup.py:61] CPU usage in percent: >1.7<
+2024-02-15 01:54:24.403 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:54:25.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:54:26.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:54:27.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:54:27.907 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:54:28.455 WARNING  [setup.py:61] CPU usage in percent: >1.6<
+2024-02-15 01:54:29.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:54:30.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:54:31.508 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:54:32.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:54:33.036 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:54:33.062 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:54:34.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:54:35.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:54:36.088 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:54:37.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:54:38.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:54:38.061 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:54:39.141 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:54:40.000 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:54:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:54:42.195 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:54:43.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:54:43.066 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:54:44.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:54:45.247 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:54:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:54:47.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:54:48.301 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:54:48.330 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:54:49.000 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:54:50.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:54:51.354 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:54:52.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:54:53.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:54:53.332 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:54:54.407 WARNING  [setup.py:61] CPU usage in percent: >1.6<
+2024-02-15 01:54:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:54:56.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:54:57.461 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:54:58.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:54:58.328 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:54:59.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 01:55:00.514 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:55:01.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:55:02.040 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:55:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:55:03.591 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:55:04.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:55:05.093 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:55:06.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:55:07.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:55:08.145 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:55:08.594 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:55:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:55:10.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:55:11.199 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:55:12.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:55:13.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:55:13.599 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:55:14.253 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:55:15.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:55:16.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:55:17.306 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:55:18.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:55:18.858 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:55:19.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:55:20.359 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:55:21.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:55:22.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:55:23.412 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:55:23.866 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:55:24.000 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:55:25.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:55:26.467 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:55:27.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:55:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:55:28.863 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:55:29.519 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 01:55:30.001 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:55:31.046 WARNING  [setup.py:61] CPU usage in percent: >1.4<
+2024-02-15 01:55:32.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:55:33.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:55:34.102 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:55:34.120 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:55:35.000 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:55:36.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:55:37.153 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:55:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:55:39.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:55:39.127 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:55:40.206 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:55:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:55:42.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:55:43.260 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:55:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:55:44.134 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:55:45.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:55:46.313 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:55:47.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:55:48.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:55:49.368 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:55:49.395 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:55:50.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:55:51.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:55:52.421 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:55:53.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:55:54.000 WARNING  [setup.py:61] CPU usage in percent: >1.7<
+2024-02-15 01:55:54.391 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:55:55.474 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:55:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:55:57.002 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:55:58.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:55:59.001 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:55:59.401 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:56:00.056 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:56:01.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:56:02.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:56:03.109 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:56:04.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:56:04.660 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:56:05.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:56:06.163 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:56:07.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:56:08.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:56:09.217 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:56:09.665 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:56:10.000 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:56:11.000 WARNING  [setup.py:61] CPU usage in percent: >2.2<
+2024-02-15 01:56:12.271 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:56:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:56:14.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:56:14.663 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:56:15.324 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:56:16.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:56:17.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:56:18.378 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:56:19.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:56:19.928 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:56:20.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:56:21.433 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:56:22.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:56:23.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:56:24.486 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:56:24.936 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:56:25.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:56:26.013 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:56:27.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:56:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:56:29.066 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:56:29.932 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:56:30.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:56:31.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 01:56:32.119 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:56:33.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:56:34.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:56:35.175 WARNING  [setup.py:61] CPU usage in percent: >2.3<
+2024-02-15 01:56:35.200 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:56:36.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:56:37.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:56:38.229 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:56:39.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:56:40.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:56:40.207 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:56:41.282 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:56:42.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:56:43.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:56:44.334 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:56:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:56:45.204 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:56:46.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 01:56:47.388 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:56:48.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:56:49.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:56:50.444 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:56:50.469 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:56:51.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:56:52.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:56:53.495 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:56:54.001 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:56:55.022 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:56:55.469 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:56:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:56:57.001 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:56:58.074 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:56:59.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:57:00.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:57:00.474 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:57:01.128 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:57:02.000 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:57:03.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:57:04.181 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:57:05.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:57:05.731 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:57:06.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 01:57:07.235 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:57:08.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:57:09.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:57:10.288 WARNING  [setup.py:61] CPU usage in percent: >1.7<
+2024-02-15 01:57:10.738 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:57:11.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:57:12.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:57:13.342 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:57:14.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:57:15.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:57:15.735 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:57:16.395 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:57:17.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:57:18.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:57:19.448 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:57:20.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:57:21.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:57:21.003 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:57:22.502 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:57:23.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:57:24.029 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:57:25.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:57:26.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:57:26.002 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:57:27.083 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:57:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:57:29.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:57:30.137 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:57:31.000 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:57:31.005 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:57:32.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:57:33.188 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:57:34.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:57:35.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:57:36.243 WARNING  [setup.py:61] CPU usage in percent: >1.4<
+2024-02-15 01:57:36.270 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:57:37.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:57:38.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:57:39.296 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:57:40.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:57:41.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:57:41.270 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:57:42.350 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:57:43.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:57:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:57:45.404 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:57:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:57:46.274 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:57:47.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:57:48.458 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:57:49.001 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:57:50.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:57:51.512 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:57:51.535 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:57:52.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:57:53.039 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:57:54.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:57:55.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:57:56.093 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:57:56.542 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:57:57.001 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:57:58.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:57:59.146 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 01:58:00.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:58:01.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:58:01.542 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:58:02.199 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 01:58:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:58:04.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:58:05.252 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:58:06.001 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:58:06.804 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_5_normal", "ip": "192.168.68.60"}
+2024-02-15 01:58:07.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 01:58:08.305 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:58:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:58:10.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:58:11.358 WARNING  [setup.py:61] CPU usage in percent: >1.7<
+2024-02-15 01:58:11.815 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_4_monitoring", "ip": "192.168.68.60"}
+2024-02-15 01:58:11.817 INFO     [defcon_handler.py:90] Set new monitoring frequency of CPU load to: 0.5
+2024-02-15 01:58:11.817 INFO     [intrusion_detector.py:16] Updated MQTT msg rate to max 100000
+2024-02-15 01:58:11.818 INFO     [defcon_handler.py:60] Increased defcon mode to: defcon_4_monitoring
+2024-02-15 01:58:11.863 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_3_adv_sec", "ip": "192.168.68.60"}
+2024-02-15 01:58:11.864 INFO     [intrusion_detector.py:16] Updated MQTT msg rate to max 120000
+2024-02-15 01:58:11.865 INFO     [defcon_handler.py:60] Increased defcon mode to: defcon_3_adv_sec
+2024-02-15 01:58:11.910 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_3_adv_sec", "ip": "192.168.68.60"}
+2024-02-15 01:58:12.000 WARNING  [setup.py:61] CPU usage in percent: >3.1<
+2024-02-15 01:58:13.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:58:14.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:58:15.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:58:16.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:58:16.807 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_2_restrict", "ip": "192.168.68.60"}
+2024-02-15 01:58:16.808 INFO     [intrusion_detector.py:16] Updated MQTT msg rate to max 140000
+2024-02-15 01:58:16.809 INFO     [defcon_handler.py:60] Increased defcon mode to: defcon_2_restrict
+2024-02-15 01:58:16.838 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:58:17.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 01:58:18.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:58:19.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:58:20.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:58:21.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:58:21.809 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:58:22.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:58:23.411 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:58:24.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 01:58:25.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:58:26.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:58:26.811 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:58:27.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:58:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:58:29.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:58:30.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:58:31.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:58:31.816 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:58:32.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:58:33.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:58:34.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:58:35.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:58:36.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:58:36.811 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:58:37.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:58:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:58:39.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:58:40.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:58:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:58:41.814 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:58:42.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:58:43.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:58:44.463 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:58:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:58:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:58:46.821 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:58:47.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:58:48.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:58:49.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:58:50.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:58:51.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:58:51.819 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:58:52.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:58:53.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:58:54.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:58:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:58:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.2<
+2024-02-15 01:58:56.815 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:58:57.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:58:58.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:58:59.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:00.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:01.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:01.819 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:59:02.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:04.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:05.514 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 01:59:06.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:59:06.822 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:59:07.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:59:08.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:59:10.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:11.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:59:11.823 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:59:12.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:14.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:15.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:16.040 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:59:16.822 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:59:17.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:18.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:19.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:20.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:59:21.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:59:21.821 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:59:22.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:59:23.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:24.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:25.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:26.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:26.825 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:59:27.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:59:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:29.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:30.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:31.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:31.828 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:59:32.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 01:59:33.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:34.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:35.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:36.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:37.092 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:37.118 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:59:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 01:59:39.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:40.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:42.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 01:59:42.123 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:59:43.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:47.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:47.644 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:59:48.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 01:59:49.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:50.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:51.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:52.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:52.648 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:59:53.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 01:59:54.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 01:59:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 01:59:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:59:57.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 01:59:58.146 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 01:59:58.170 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 01:59:59.000 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 02:00:00.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:01.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:02.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:00:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:03.174 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:00:04.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:00:05.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:06.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:07.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:08.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:00:08.697 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:00:09.000 WARNING  [setup.py:61] CPU usage in percent: >2.0<
+2024-02-15 02:00:10.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:00:11.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:00:12.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:13.702 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:00:14.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:15.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:16.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:17.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:18.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:19.198 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:00:19.223 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:00:20.000 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 02:00:21.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:22.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:23.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:24.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:24.228 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:00:25.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:00:26.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:27.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:00:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:29.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:29.751 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:00:30.000 WARNING  [setup.py:61] CPU usage in percent: >2.0<
+2024-02-15 02:00:31.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:00:32.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:33.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:34.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:34.752 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:00:35.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:36.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:00:37.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:00:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:39.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:40.251 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 02:00:40.277 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:00:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:00:42.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:43.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:00:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:45.283 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:00:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:00:47.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:48.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:49.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:00:50.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:50.803 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:00:51.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 02:00:52.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:00:53.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:54.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:55.805 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:00:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:00:57.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:58.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:00:59.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:00.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:01:01.304 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 02:01:01.330 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:01:02.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:01:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:04.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:05.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:01:06.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:01:06.334 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:01:07.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:01:08.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.2<
+2024-02-15 02:01:10.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:01:11.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:01:11.856 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:01:12.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 02:01:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:14.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:15.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:16.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:01:16.856 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:01:17.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:18.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:01:19.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:01:20.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:01:21.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:01:22.358 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:01:22.383 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:01:23.000 WARNING  [setup.py:61] CPU usage in percent: >1.6<
+2024-02-15 02:01:24.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:25.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:26.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:01:26.861 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:01:27.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 02:01:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:01:29.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:30.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:01:31.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:01:31.859 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:01:32.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:33.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:01:34.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:35.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:01:36.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:01:36.868 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:01:37.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:01:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:01:39.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:40.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:01:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:41.863 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:01:42.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:01:43.410 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 02:01:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:01:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:01:46.863 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:01:47.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:01:48.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:01:49.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:50.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:51.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:51.866 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:01:52.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 02:01:53.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:01:54.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:01:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:01:56.871 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:01:57.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:01:58.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:01:59.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:00.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:01.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:02:01.871 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:02:02.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 02:02:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:02:04.461 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:02:05.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:06.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:02:06.872 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:02:07.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:08.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:02:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:10.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:02:11.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:02:11.869 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:02:12.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:14.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:02:15.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:02:16.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:02:16.875 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:02:17.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:02:18.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:19.001 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:20.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:21.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:02:21.875 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:02:22.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:02:23.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:24.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:25.513 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:02:26.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:02:26.885 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:02:27.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:02:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:02:29.000 WARNING  [setup.py:61] CPU usage in percent: >0.2<
+2024-02-15 02:02:30.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:31.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:31.872 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:02:32.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:02:33.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:34.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:02:35.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:36.039 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:02:36.881 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:02:37.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:02:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:02:39.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:02:40.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:02:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:41.878 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:02:42.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:02:43.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:02:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:02:46.881 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:02:47.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:02:48.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:49.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:02:50.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:02:51.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:51.884 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:02:52.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:02:53.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:02:54.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:57.092 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:02:57.114 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:02:58.001 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 02:02:59.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:00.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:01.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:02.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:02.120 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:03:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:03:04.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:05.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:06.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:07.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:07.644 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:03:08.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 02:03:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:03:10.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:11.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:03:12.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:12.643 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:03:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:03:14.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:03:15.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:16.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:17.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:18.144 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 02:03:18.175 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:03:19.000 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 02:03:20.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:03:21.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:22.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:23.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:23.170 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:03:24.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:25.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:26.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:27.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:28.697 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:03:29.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:03:30.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:03:31.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:03:32.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:33.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:33.702 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:03:34.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:03:35.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:36.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:03:37.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:03:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:39.198 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:03:39.221 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:03:40.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:42.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:43.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:03:44.228 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:03:45.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:03:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:47.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:48.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:49.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:49.750 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:03:50.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:03:51.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:52.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:53.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:03:54.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:03:54.752 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:03:55.001 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:03:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:57.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:03:58.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:03:59.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:00.249 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:04:00.277 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:04:01.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:04:02.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:04:04.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:04:05.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:04:05.282 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:04:06.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:04:07.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:08.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:10.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:04:10.801 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:04:11.000 WARNING  [setup.py:61] CPU usage in percent: >2.3<
+2024-02-15 02:04:12.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:14.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:15.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:15.798 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:04:16.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 02:04:17.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:18.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:04:19.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:20.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:04:21.302 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:04:21.329 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:04:22.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 02:04:23.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:04:24.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:04:25.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:04:26.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:04:26.327 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:04:27.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:04:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:29.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:04:30.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:04:31.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:04:31.856 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:04:32.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 02:04:33.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:04:34.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:04:35.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:04:36.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:04:36.857 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:04:37.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:04:39.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:04:40.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:04:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:04:42.355 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 02:04:42.381 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:04:43.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 02:04:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:47.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:47.384 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:04:48.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:04:49.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:04:50.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:04:51.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:52.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:52.902 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:04:53.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 02:04:54.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:04:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:04:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:57.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:04:57.385 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:04:58.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:04:59.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:00.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:01.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:05:02.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:05:02.389 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:05:03.411 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 02:05:04.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 02:05:05.001 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:05:06.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:05:07.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:07.384 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:05:08.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:05:10.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:11.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 02:05:12.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:05:12.389 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:05:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:05:14.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:05:15.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:05:16.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:17.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:05:17.389 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:05:18.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:05:19.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:05:20.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:05:21.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:05:22.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:05:22.397 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:05:23.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:24.462 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 02:05:25.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:26.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:05:27.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:27.392 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:05:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:05:29.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:05:30.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:05:31.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:32.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:32.398 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:05:33.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:05:34.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:05:35.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:05:36.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:05:37.514 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:05:37.538 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:05:38.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:05:39.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:40.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:05:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:42.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:42.543 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:05:43.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 02:05:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:05:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:47.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:05:48.040 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:05:48.067 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:05:49.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:05:50.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:05:51.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:52.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:53.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:05:53.068 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:05:54.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:05:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:05:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:05:57.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:05:58.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:05:58.596 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:05:59.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 02:06:00.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:06:01.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:06:02.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:06:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:06:03.596 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:06:04.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:06:05.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:06:06.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:06:07.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:06:08.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:06:09.093 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:06:09.120 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:06:10.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:06:11.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:06:12.001 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:06:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:06:14.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:06:14.121 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:06:15.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:06:16.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:06:17.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:06:18.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:06:19.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:06:19.640 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:06:20.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 02:06:21.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:06:22.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:06:23.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:06:24.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:06:24.122 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:06:25.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:06:26.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:06:27.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:06:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:06:29.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:06:29.122 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:06:30.147 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:06:31.000 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 02:06:32.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:06:33.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:06:34.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:06:34.125 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:06:35.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:06:36.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:06:37.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:06:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:06:39.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:06:39.126 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:06:40.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:06:41.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:06:42.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:06:43.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:06:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:06:44.131 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:06:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:06:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.2<
+2024-02-15 02:06:47.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:06:48.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:06:49.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:06:49.133 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:06:50.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 02:06:51.199 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:06:52.000 WARNING  [setup.py:61] CPU usage in percent: >0.6<
+2024-02-15 02:06:53.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:06:54.001 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:06:54.133 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:06:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:06:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:06:57.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:06:58.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:06:59.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:06:59.136 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:07:00.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:07:01.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:02.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:07:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:07:04.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:04.136 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:07:05.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:07:06.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:07.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:07:08.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:07:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:09.135 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:07:10.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:07:11.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:07:12.249 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:07:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:07:14.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:07:14.138 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:07:15.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:16.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:07:17.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:07:18.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:19.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:19.137 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:07:20.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:07:21.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:07:22.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:23.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:07:24.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:24.143 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:07:25.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:26.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:27.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:07:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:29.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:07:29.141 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:07:30.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:31.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:32.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:33.300 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:07:34.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 02:07:34.145 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:07:35.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:07:36.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:07:37.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:07:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:07:39.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:07:39.146 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:07:40.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:07:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:07:42.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:43.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:44.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:07:44.147 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:07:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:47.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:07:48.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:07:49.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:49.148 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:07:50.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:07:51.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:07:52.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:07:53.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:07:54.353 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 02:07:54.380 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:07:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 02:07:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:07:57.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:07:58.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:07:59.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:07:59.381 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:08:00.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:08:01.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:02.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:08:04.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:08:04.910 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:08:05.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 02:08:06.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:07.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:08.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:08:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:09.908 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:08:10.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:08:11.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:08:12.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:08:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:08:14.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:15.405 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:08:15.434 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:08:16.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:08:17.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:18.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:19.000 WARNING  [setup.py:61] CPU usage in percent: >0.2<
+2024-02-15 02:08:20.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:20.431 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:08:21.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:08:22.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:23.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:24.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:08:25.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:08:25.959 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:08:26.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 02:08:27.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:08:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:29.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:30.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:30.960 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:08:31.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 02:08:32.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:08:33.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:08:34.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:35.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:08:36.457 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 02:08:36.484 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:08:37.000 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 02:08:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:39.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:40.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:08:41.485 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:08:42.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:08:43.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:08:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:08:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:47.001 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 02:08:47.007 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:08:48.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:08:49.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:50.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:08:51.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:52.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:52.020 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:08:53.001 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:08:54.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:08:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:08:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:08:57.509 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:08:57.539 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:08:58.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:08:59.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:00.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:09:01.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:02.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:09:02.538 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:09:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:09:04.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:09:05.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:09:06.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:07.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:09:08.035 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:09:08.059 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:09:09.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:09:10.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:09:11.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:09:12.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:09:13.065 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:09:14.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:09:15.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:16.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:17.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:09:18.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:09:18.585 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:09:19.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 02:09:20.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:21.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:22.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:09:23.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:09:23.591 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:09:24.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:09:25.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:26.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:27.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:29.087 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 02:09:29.113 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:09:30.000 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 02:09:31.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:09:32.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:09:33.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:34.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:09:34.114 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:09:35.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:09:36.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:09:37.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:09:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:09:39.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:09:39.643 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:09:40.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 02:09:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:42.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:43.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:09:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:09:44.641 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:09:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:09:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:09:47.000 WARNING  [setup.py:61] CPU usage in percent: >2.0<
+2024-02-15 02:09:48.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:09:49.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:09:50.140 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:09:50.167 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:09:51.000 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 02:09:52.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:53.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:54.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:09:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:09:55.167 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:09:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:09:57.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:58.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:09:59.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:00.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:10:00.699 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:10:01.000 WARNING  [setup.py:61] CPU usage in percent: >1.8<
+2024-02-15 02:10:02.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:10:04.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:05.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:05.696 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:10:06.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:10:07.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:08.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:10:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:10:10.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:10:11.193 WARNING  [setup.py:61] CPU usage in percent: >1.9<
+2024-02-15 02:10:11.223 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:10:12.000 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 02:10:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.2<
+2024-02-15 02:10:14.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:15.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:10:16.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:16.219 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:10:17.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:10:18.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:10:19.000 WARNING  [setup.py:61] CPU usage in percent: >0.2<
+2024-02-15 02:10:20.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:21.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:10:21.742 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:10:22.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:10:23.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:10:24.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:25.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:10:26.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:26.748 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:10:27.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:10:28.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:29.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:30.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:10:31.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:10:32.246 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:10:32.273 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:10:33.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:34.000 WARNING  [setup.py:61] CPU usage in percent: >0.2<
+2024-02-15 02:10:35.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:36.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:10:37.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:37.274 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:10:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:10:39.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:40.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:10:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:10:42.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:10:42.792 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:10:43.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 02:10:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:10:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:47.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:47.277 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:10:48.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 02:10:49.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:50.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:51.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:10:52.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:10:52.280 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:10:53.300 WARNING  [setup.py:61] CPU usage in percent: >1.4<
+2024-02-15 02:10:54.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:10:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:10:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:10:57.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:10:57.280 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:10:58.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:10:59.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:00.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:01.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:02.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:02.280 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:11:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:11:04.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:11:05.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:06.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:07.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:07.282 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:11:08.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:11:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:10.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:11.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:11:12.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:12.283 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:11:13.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:11:14.351 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 02:11:15.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:11:16.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:17.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 02:11:17.287 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:11:18.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:19.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:20.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:21.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:22.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:22.289 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:11:23.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:24.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:25.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:11:26.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:27.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:11:27.289 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:11:28.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:11:29.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:30.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:11:31.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:32.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:32.285 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:11:33.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:34.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:35.402 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 02:11:36.000 WARNING  [setup.py:61] CPU usage in percent: >0.4<
+2024-02-15 02:11:37.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:37.291 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:11:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:11:39.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:40.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:11:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:42.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:42.291 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:11:43.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:11:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:11:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:11:47.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:47.291 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:11:48.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:11:49.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:50.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:51.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:52.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:11:52.299 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:11:53.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:11:54.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:11:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:11:56.455 WARNING  [setup.py:61] CPU usage in percent: >0.9<
+2024-02-15 02:11:57.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:57.298 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:11:58.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:11:59.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:00.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:01.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:12:02.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:02.304 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:12:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:04.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:05.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:06.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:07.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 02:12:07.296 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:12:08.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:09.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:10.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:11.000 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 02:12:12.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:12.305 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:12:13.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:14.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:15.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:12:16.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:17.507 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:12:17.535 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:12:18.000 WARNING  [setup.py:61] CPU usage in percent: >1.5<
+2024-02-15 02:12:19.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:20.000 WARNING  [setup.py:61] CPU usage in percent: >0.2<
+2024-02-15 02:12:21.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:22.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:12:22.538 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:12:23.000 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:12:24.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:25.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:26.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:27.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:28.033 WARNING  [setup.py:61] CPU usage in percent: >1.2<
+2024-02-15 02:12:28.061 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:12:29.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:30.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:31.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:12:32.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:33.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:33.060 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:12:34.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:12:35.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:36.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:37.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:12:38.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:38.586 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:12:39.000 WARNING  [setup.py:61] CPU usage in percent: >1.0<
+2024-02-15 02:12:40.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:41.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:12:42.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:12:43.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:43.588 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:12:44.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:45.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:46.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:47.000 WARNING  [setup.py:61] CPU usage in percent: >0.2<
+2024-02-15 02:12:48.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:49.085 WARNING  [setup.py:61] CPU usage in percent: >1.6<
+2024-02-15 02:12:49.111 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:12:50.000 WARNING  [setup.py:61] CPU usage in percent: >1.1<
+2024-02-15 02:12:51.000 WARNING  [setup.py:61] CPU usage in percent: >0.7<
+2024-02-15 02:12:52.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:53.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:54.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:54.116 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:12:55.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:56.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:57.000 WARNING  [setup.py:61] CPU usage in percent: >0.0<
+2024-02-15 02:12:58.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:12:59.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:12:59.638 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:13:00.001 WARNING  [setup.py:61] CPU usage in percent: >1.3<
+2024-02-15 02:13:01.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
+2024-02-15 02:13:02.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:13:03.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:13:04.000 WARNING  [setup.py:61] CPU usage in percent: >0.3<
+2024-02-15 02:13:04.640 INFO     [web_socket_client.py:18] received new msg from server >>>{"defcon_lvl": "defcon_1_localize", "ip": "192.168.68.60"}
+2024-02-15 02:13:05.000 WARNING  [setup.py:61] CPU usage in percent: >0.8<
+2024-02-15 02:13:06.000 WARNING  [setup.py:61] CPU usage in percent: >0.5<
