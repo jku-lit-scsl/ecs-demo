@@ -1,11 +1,12 @@
 import logging
+import os
 import threading
 import time
 
 import config.config as CONFIG
 from Adafruit_Python_DHT.examples.AdafruitDHT import collect_dht22_data
 from util.mqtt_receiver import MQTTReceiver
-from util.utils import start_mosquitto_service, synchronize_system_time, get_cpu_usage
+from util.utils import start_mosquitto_service, synchronize_system_time, get_cpu_usage, generate_timestamp_for_filename
 from util.web_socket_server import start_ws_server
 
 CLOUD_SERVER = 0
@@ -65,15 +66,27 @@ def setup_logging():
     for handler in logging.root.handlers[:]:
         logging.root.removeHandler(handler)
 
-    # Create a StreamHandler with the desired settings
+    # Create a StreamHandler for console output
     console_handler = logging.StreamHandler()
     console_handler.setLevel(logging.INFO)
-    formatter = logging.Formatter('%(asctime)s.%(msecs)03d %(levelname)-8s %(message)s', '%Y-%m-%d %H:%M:%S')
-    console_handler.setFormatter(formatter)
+    console_formatter = logging.Formatter('%(asctime)s.%(msecs)03d %(levelname)-8s %(message)s', '%Y-%m-%d %H:%M:%S')
+    console_handler.setFormatter(console_formatter)
 
-    # Add the handler to the root logger
-    logging.getLogger().addHandler(console_handler)
-    logging.getLogger().setLevel(logging.INFO)
+    # Create a FileHandler for logging to a file
+    log_file_path = os.path.join('logs',
+                                 f"{generate_timestamp_for_filename()}_{CONFIG.network_conf['my_ip']}_efficacy_eval.log")
+    os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
+    file_handler = logging.FileHandler(log_file_path, mode='w')
+    file_handler.setLevel(logging.INFO)
+    file_formatter = logging.Formatter('%(asctime)s.%(msecs)03d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s',
+                                       '%Y-%m-%d %H:%M:%S')
+    file_handler.setFormatter(file_formatter)
+
+    # Add both handlers to the root logger
+    logger = logging.getLogger()
+    logger.addHandler(console_handler)
+    logger.addHandler(file_handler)
+    logger.setLevel(logging.INFO)
 
     threading.Thread(target=log_cpu_usage_every_second).start()
 
