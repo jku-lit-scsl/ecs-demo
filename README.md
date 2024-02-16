@@ -13,7 +13,7 @@ Initial evidence from our results suggests that this novel approach leads us to 
 ## Repository Contents
 
 - Proof of Concept Implementation: A practical demonstration of the proposed cyber-resilient edge computing framework, showcasing its functionality and effectiveness.
-- Documentation: Documentation to guide you through setting up and running the proof of concept. (c.f. ``)
+- Documentation: Documentation to guide you through setting up and running the proof of concept. (c.f. "Getting Started")
 - Additional Resources: Supplementary materials, datasets, and resources used in the implementation and evaluation (c.f. `evaluation` and `dos`).
 
 ## Getting Started
