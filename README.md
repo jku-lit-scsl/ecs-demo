@@ -26,6 +26,10 @@ It assumes the system it is running on is Ubuntu 20.04:
 - update `config/config.py` with IPs of own machine + the server/client IPs
 - start project running the virtual environment (printed out by the script) with the `main.py` file as root
 
+Note: 
+For convenience in setting up the evaluation some additional commands are contained in the `setup.py` file (e.g., setting the timezone to central Europe etc.). 
+Before executing the script, check out what it does.
+
 ## Contact
 
 For any questions, feedback, or inquiries related to the paper or this repository, feel free to contact the authors directly.
